@@ -1,0 +1,107 @@
+/* ============================================================
+   KayLive — Design Tokens (from DESIGN.md / Stitch KayLive Cinematic)
+   ============================================================ */
+
+:root {
+  /* Base */
+  --bg:                        #0A0A0B;
+  --surface:                   #131314;
+  --surface-dim:               #131314;
+  --surface-low:               #1c1b1c;
+  --surface-container:         #201f20;
+  --surface-high:              #2a2a2b;
+  --surface-highest:           #353436;
+  --surface-bright:            #3a393a;
+  --surface-lowest:            #0e0e0f;
+
+  /* Primary — neon purple */
+  --primary:                   #ddb7ff;
+  --primary-container:         #b76dff;
+  --on-primary:                #490080;
+  --on-primary-container:      #400071;
+  --primary-fixed:             #f0dbff;
+  --primary-fixed-dim:         #ddb7ff;
+  --inverse-primary:           #842bd2;
+
+  /* Secondary */
+  --secondary:                 #dbb8ff;
+  --secondary-container:       #573878;
+  --on-secondary:              #3f2160;
+  --on-secondary-container:    #caa6ef;
+  --secondary-fixed:           #efdbff;
+  --secondary-fixed-dim:       #dbb8ff;
+
+  /* Tertiary — indigo */
+  --tertiary:                  #c0c1ff;
+  --tertiary-container:        #8083ff;
+  --on-tertiary:               #1000a9;
+  --on-tertiary-container:     #0d0096;
+
+  /* Surface text */
+  --on-surface:                #e5e2e3;
+  --on-surface-var:            #cfc2d6;
+  --on-background:             #e5e2e3;
+  --inverse-surface:           #e5e2e3;
+  --inverse-on-surface:        #313031;
+
+  /* Outline */
+  --outline:                   #988d9f;
+  --outline-var:               #4d4354;
+
+  /* Error */
+  --error:                     #ffb4ab;
+  --error-container:           #93000a;
+  --on-error:                  #690005;
+  --on-error-container:        #ffdad6;
+
+  /* Glass */
+  --glass-bg:                  rgba(255,255,255,0.05);
+  --glass-bg-strong:           rgba(255,255,255,0.08);
+  --glass-border:              rgba(255,255,255,0.1);
+  --glass-blur:                40px;
+
+  /* Neon glows */
+  --glow-primary:              0 0 20px rgba(168,85,247,0.2);
+  --glow-primary-strong:       0 0 30px rgba(168,85,247,0.4);
+  --glow-primary-subtle:       0 0 20px rgba(183,109,255,0.15);
+
+  /* Gradients */
+  --gradient-primary:          linear-gradient(to right, #ddb7ff, #b76dff);
+  --gradient-btn:              linear-gradient(135deg, #A855F7, #D8B4FE);
+
+  /* Typography */
+  --font-display:              'Sora', sans-serif;
+  --font-body:                 'Inter', sans-serif;
+
+  /* Spacing scale (8px base) */
+  --space-1:    8px;
+  --space-2:    16px;
+  --space-3:    24px;
+  --space-4:    32px;
+  --space-5:    40px;
+  --space-6:    48px;
+  --space-8:    64px;
+  --space-10:   80px;
+  --space-12:   96px;
+  --space-16:   128px;
+  --space-20:   160px;
+
+  /* Layout */
+  --container:         1280px;
+  --gutter:            24px;
+  --margin-mobile:     20px;
+  --margin-desktop:    48px;
+  --section-gap-lg:    160px;
+  --section-gap-sm:    80px;
+  --nav-height:        80px;
+
+  /* Border radius */
+  --r-sm:    4px;
+  --r:       8px;
+  --r-md:    12px;
+  --r-lg:    16px;
+  --r-xl:    24px;
+  --r-2xl:   32px;
+  --r-3xl:   40px;
+  --r-full:  9999px;
+}

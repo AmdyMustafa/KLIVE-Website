@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 48" fill="none">
+  <defs>
+    <linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#D8B4FE"/>
+    </linearGradient>
+  </defs>
+  <text x="0" y="36" font-family="Sora,sans-serif" font-size="32" font-weight="700" fill="url(#lg)" letter-spacing="-1">KayLive</text>
+  <circle cx="152" cy="10" r="5" fill="#A855F7">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

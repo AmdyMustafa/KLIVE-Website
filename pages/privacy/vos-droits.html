@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vos Droits (RGPD & CCPA) | KayLive</title>
+  <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#0A0A0B" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet" />
+  <!-- Tailwind CDN (design tokens via config) -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="../../assets/js/components.js"></script>
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../../assets/css/main.css" />
+  <style>
+    body {
+      background-color: #131314;
+      color: #e5e2e3;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(40px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .perforated-edge {
+      mask-image: radial-gradient(circle at 0px 50%, transparent 10px, black 11px),
+        radial-gradient(circle at 100% 50%, transparent 10px, black 11px);
+    }
+
+    @keyframes pulse-neon {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.7;
+      }
+    }
+
+    .live-pulse {
+      animation: pulse-neon 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <!-- TopBar-->
+  <div id="header"></div>
+
+  <div class="container">
+    <div class="privacy-layout">
+
+
+      <!-- Side bar menu -->
+      <div id="sidebar-container"></div>
+      <script src="componnent/sidebar.js"></script>
+
+      <div class="privacy-content">
+
+        <main class="pt-32 pb-section-gap-lg">
+             <!-- Hero Section -->
+          <section class="mb-section-gap-sm">
+            <div class="flex flex-col gap-6">
+              <h1 class="font-display-lg text-display-lg text-white mb-6 leading-tight">Vos Droits <span
+                  class="text-primary">(RGPD &amp; CCPA)</span></h1>
+              <p class="font-body-lg text-body-lg text-on-surface-variant">Chez KayLive, la transparence n'est pas
+                une option, c'est un pilier. Découvrez comment vous gardez le contrôle total sur votre identité
+                numérique.</p>
+            </div>
+          </section>
+          <!-- Rights Bento Grid -->
+          <section class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+            <!-- Right: Access -->
+            <div
+              class="md:col-span-12 glass-panel p-8 rounded-xl hover:border-primary/40 transition-all duration-300 group">
+              <div class="flex flex-col md:flex-row gap-8 items-start">
+                <div
+                  class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 border border-primary/20 group-hover:bg-primary/20 transition-transform">
+                  <span class="material-symbols-outlined text-primary text-[32px]">visibility</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-headline-md text-white mb-4">Droit d'Accès</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+                    Vous avez le droit de demander une copie intégrale des données personnelles que nous détenons à
+                    votre sujet. Cela inclut votre historique de visionnage, vos transactions PPV, et vos
+                    préférences de profil. Nous nous engageons à vous fournir ces informations dans un format
+                    structuré et lisible sous 30 jours.
+                  </p>
+                  <ul class="space-y-3">
+                    <li class="flex items-center gap-3 text-label-md font-label-md text-on-surface">
+                      <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                      Historique des transactions financières
+                    </li>
+                    <li class="flex items-center gap-3 text-label-md font-label-md text-on-surface">
+                      <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                      Données de connexion et logs techniques
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Right: Portability -->
+            <div class="md:col-span-6 glass-panel p-8 rounded-xl border-l-4 border-l-primary/60">
+              <div class="w-12 h-12 rounded-lg bg-secondary-container flex items-center justify-center mb-6">
+                <span class="material-symbols-outlined text-secondary text-[28px]">move_up</span>
+              </div>
+              <h3 class="font-headline-md text-[24px] text-white mb-3">Portabilité</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-6">Transférez vos données vers un autre
+                service sans entrave technique.</p>
+              <button
+                class="w-full py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg font-label-md text-label-md transition-all">Exporter
+                mes données</button>
+            </div>
+            <!-- Right: Rectification -->
+            <div class="md:col-span-6 glass-panel p-8 rounded-xl">
+              <div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center mb-6">
+                <span class="material-symbols-outlined text-primary text-[28px]">edit_square</span>
+              </div>
+              <h3 class="font-headline-md text-[24px] text-white mb-3">Rectification</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">Une erreur dans vos informations ? Vous
+                avez le pouvoir de corriger toute donnée inexacte instantanément.</p>
+            </div>
+            <!-- Right: Erasure -->
+            <div
+              class="md:col-span-12 glass-panel p-8 rounded-xl relative overflow-hidden flex flex-col justify-between border-dashed border-2 border-primary/30 perforated-edge">
+              <div class="flex justify-between items-start">
+                <div class="max-w-md">
+                  <h3 class="font-headline-md text-headline-md text-white mb-4">Droit à l'Oubli</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant">
+                    Vous pouvez exiger la suppression définitive de votre compte et de toutes les données associées.
+                    Notez que certaines données transactionnelles doivent être conservées légalement.
+                  </p>
+                </div>
+                <div class="hidden lg:block">
+                  <span class="material-symbols-outlined text-primary/20 text-[120px]">delete_forever</span>
+                </div>
+              </div>
+              <div class="mt-8 pt-6 border-t border-white/10 flex items-center gap-4">
+                <button
+                  class="px-6 py-3 bg-error-container text-on-error-container rounded-lg font-label-md text-label-md hover:bg-error transition-colors">Supprimer
+                  mon compte</button>
+                <span class="text-label-sm font-label-sm text-on-surface-variant/60 italic">Action
+                  irréversible</span>
+              </div>
+            </div>
+          </section>
+          <!-- DPO Contact Section -->
+          <section>
+            <div class="glass-panel rounded-3xl p-1 bg-gradient-to-br from-primary/30 to-transparent">
+              <div class="bg-surface rounded-[22px] p-8 md:p-12 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                  <h2 class="font-headline-lg text-headline-lg text-white mb-6">Contactez notre <span
+                      class="text-primary">DPO</span></h2>
+                  <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                    Notre Délégué à la Protection des Données est là pour répondre à vos questions complexes.
+                  </p>
+                  <div class="space-y-4">
+                    <div class="flex items-center gap-4 text-on-surface">
+                      <span class="material-symbols-outlined text-primary">mail</span>
+                      <span class="font-body-md">privacy@kaylive.com</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="md:w-1/2 w-full">
+                  <form class="space-y-4">
+                    <input
+                      class="w-full bg-surface-container-low border border-white/10 rounded-xl px-6 py-4 focus:border-primary focus:ring-1 focus:ring-primary transition-all text-on-surface outline-none"
+                      placeholder="Email" type="email" />
+                    <textarea
+                      class="w-full bg-surface-container-low border border-white/10 rounded-xl px-6 py-4 focus:border-primary focus:ring-1 focus:ring-primary transition-all text-on-surface outline-none"
+                      placeholder="Votre message..." rows="4"></textarea>
+                    <button
+                      class="w-full bg-primary-container text-on-primary-container py-4 rounded-xl font-headline-md text-[18px] hover:brightness-110 transition-all shadow-lg shadow-primary/20"
+                      type="submit">Envoyer la requête</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <!-- Standardized 4-Column Footer -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+  <script>
+    async function loadComponent(id, url) {
+      const res = await fetch(url);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+    }
+    loadComponent("header", "../../pages/widget/header.html");
+    loadComponent("footer", "../../pages/widget/footer.html");
+  </script>
+  
+  <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

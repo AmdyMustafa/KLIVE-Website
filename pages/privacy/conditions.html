@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conditions d'utilisation | KayLive</title>
+  <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#0A0A0B" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet" />
+  <!-- Tailwind CDN (design tokens via config) -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="../../assets/js/components.js"></script>
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../../assets/css/main.css" />
+  <style>
+    body {
+      background-color: #131314;
+      color: #e5e2e3;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(40px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .neon-glow-purple {
+      box-shadow: 0 0 20px rgba(183, 109, 255, 0.15);
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <!-- TopBar-->
+  <div id="header"></div>
+
+  <div class="container">
+    <div class="privacy-layout">
+            <!-- Side bar menu -->
+      <div id="sidebar-container"></div>
+      <script src="componnent/sidebar.js"></script>
+      <div class="privacy-content">
+
+        <main class="max-w-container-max mx-auto px-margin-desktop py-section-gap-sm min-h-screen">
+          <div class="flex flex-col md:flex-row gap-gutter">
+            
+            <!-- Main Content Area -->
+            <div class="flex-1 space-y-12">
+                 <!-- Hero Section -->
+          <section class="mb-section-gap-sm">
+            <div class="flex flex-col gap-6">
+              <h1 class="font-display-lg text-display-lg text-white mb-6 leading-tight">Conditions d'<span
+                  class="text-primary">utilisation</span></h1>
+  
+            </div>
+          </section>
+              <!-- Sections -->
+              <div class="space-y-8">
+                <!-- Section 1 -->
+                <section class="glass-card p-8 rounded-xl relative overflow-hidden group">
+                  <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <span class="material-symbols-outlined text-6xl text-primary">check_circle</span>
+                  </div>
+                  <h2 class="text-headline-md font-headline-md text-primary mb-6 flex items-center gap-4">
+                    <span
+                      class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary text-sm">01</span>
+                    Acceptation des conditions
+                  </h2>
+                  <p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+                    L'utilisation des services fournis par KayLive implique l'acceptation pleine et entière des
+                    présentes Conditions d'Utilisation. En accédant à notre plateforme, que ce soit via le web, une
+                    application mobile ou une télévision connectée, vous reconnaissez avoir pris connaissance et accepté
+                    les termes énoncés ci-dessous.
+                  </p>
+                  <p class="mt-4 text-body-md font-body-md text-on-surface-variant/80">
+                    Si vous n'acceptez pas ces conditions, nous vous prions de ne pas utiliser le service. Les présentes
+                    conditions constituent un contrat juridiquement contraignant entre vous et KayLive.
+                  </p>
+                </section>
+                <!-- Section 2 -->
+                <section class="glass-card p-8 rounded-xl relative overflow-hidden group">
+                  <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <span class="material-symbols-outlined text-6xl text-primary">payments</span>
+                  </div>
+                  <h2 class="text-headline-md font-headline-md text-primary mb-6 flex items-center gap-4">
+                    <span
+                      class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary text-sm">02</span>
+                    Accès et Paiements (PPV)
+                  </h2>
+                  <div class="space-y-6">
+                    <p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+                      KayLive propose un modèle d'accès premium basé sur le Pay-Per-View (PPV) et l'abonnement mensuel.
+                      L'accès à certains contenus événementiels majeurs nécessite l'achat d'un "Ticket Virtuel"
+                      spécifique.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div class="bg-surface-container-highest/30 p-4 rounded-lg border border-white/5">
+                        <h3 class="font-bold text-primary mb-2">Transactions</h3>
+                        <p class="text-label-sm font-label-sm">Toutes les transactions sont sécurisées par un cryptage
+                          de niveau financier. Une fois l'achat confirmé, aucun remboursement n'est possible sauf en cas
+                          d'annulation totale de l'événement.</p>
+                      </div>
+                      <div class="bg-surface-container-highest/30 p-4 rounded-lg border border-white/5">
+                        <h3 class="font-bold text-primary mb-2">Disponibilité</h3>
+                        <p class="text-label-sm font-label-sm">L'accès au contenu PPV est limité dans le temps et lié
+                          exclusivement au compte utilisateur ayant effectué l'achat.</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- Section 3 -->
+                <section class="glass-card p-8 rounded-xl relative overflow-hidden group">
+                  <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <span class="material-symbols-outlined text-6xl text-primary">verified_user</span>
+                  </div>
+                  <h2 class="text-headline-md font-headline-md text-primary mb-6 flex items-center gap-4">
+                    <span
+                      class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary text-sm">03</span>
+                    Propriété Intellectuelle
+                  </h2>
+                  <p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+                    L'ensemble du contenu diffusé sur KayLive—incluant les flux vidéo, les graphismes, les logos, les
+                    marques et les interfaces—est protégé par les lois internationales sur la propriété intellectuelle.
+                    Toute reproduction, diffusion non autorisée, ou contournement des mesures techniques de protection
+                    (DRM) fera l'objet de poursuites judiciaires immédiates.
+                  </p>
+                </section>
+                <!-- Section 4 -->
+                <section class="glass-card p-8 rounded-xl relative overflow-hidden group">
+                  <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <span class="material-symbols-outlined text-6xl text-primary">warning</span>
+                  </div>
+                  <h2 class="text-headline-md font-headline-md text-primary mb-6 flex items-center gap-4">
+                    <span
+                      class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary text-sm">04</span>
+                    Responsabilité
+                  </h2>
+                  <p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+                    KayLive s'efforce de fournir une qualité de streaming optimale. Toutefois, nous ne saurions être
+                    tenus responsables des interruptions de service dues à la qualité de votre connexion internet, à des
+                    défaillances matérielles de l'utilisateur ou à des cas de force majeure affectant nos serveurs
+                    tiers.
+                  </p>
+                </section>
+                <!-- Section 5 -->
+                <section class="glass-card p-8 rounded-xl relative overflow-hidden group">
+                  <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <span class="material-symbols-outlined text-6xl text-primary">edit_note</span>
+                  </div>
+                  <h2 class="text-headline-md font-headline-md text-primary mb-6 flex items-center gap-4">
+                    <span
+                      class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary text-sm">05</span>
+                    Modification des termes
+                  </h2>
+                  <p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+                    KayLive se réserve le droit de modifier les présentes Conditions d'Utilisation à tout moment. Les
+                    utilisateurs seront informés des changements significatifs via une notification sur l'interface ou
+                    par email. La poursuite de l'utilisation du service après modification vaut acceptation des nouveaux
+                    termes.
+                  </p>
+                </section>
+                <!-- CTA Section -->
+                <div class="mt-section-gap-sm">
+                  <div
+                    class="glass-card relative p-8 rounded-2xl flex flex-col md:flex-row items-center gap-8 overflow-hidden border-2 border-primary/30">
+                    <div class="flex-1">
+                      <span
+                        class="bg-primary text-on-primary-container text-[10px] font-bold px-2 py-1 rounded mb-4 inline-block tracking-widest uppercase">Offre
+                        Premium</span>
+                      <h3 class="text-headline-md font-headline-md mb-2">Des questions sur nos tarifs ?</h3>
+                      <p class="text-on-surface-variant text-body-md font-body-md">Consultez notre guide complet sur le
+                        fonctionnement des accès Live et VOD pour une expérience sans friction.</p>
+                    </div>
+                    <div class="w-full md:w-auto">
+                      <button
+                        class="w-full md:w-auto px-8 py-4 bg-primary text-on-primary-container rounded-xl font-bold hover:shadow-[0_0_30px_rgba(183,109,255,0.4)] transition-all">Consulter
+                        l'Aide</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- Footer -->
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Footer -->
+  <div id="footer"></div>
+  <script>
+    async function loadComponent(id, url) {
+      const res = await fetch(url);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+    }
+    loadComponent("header", "../../pages/widget/header.html");
+    loadComponent("footer", "../../pages/widget/footer.html");
+  </script>
+  
+  <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

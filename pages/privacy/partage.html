@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Partage avec des tiers | KayLive Privacy</title>
+  <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#0A0A0B" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet" />
+  <!-- Tailwind CDN (design tokens via config) -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="../../assets/js/components.js"></script>
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../../assets/css/main.css" />
+  <style>
+    .glass-card {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(40px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .neon-glow {
+      box-shadow: 0 0 30px rgba(168, 85, 247, 0.15);
+    }
+
+    .pulse-live {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+    }
+
+    .grid-bg {
+      background-image: radial-gradient(circle, rgba(168, 85, 247, 0.1) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+
+    .reveal {
+      transition: all 0.7s ease-out;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- TopBar-->
+  <div id="header"></div>
+
+  <div class="container">
+    <div class="privacy-layout">
+      
+      
+      <!-- Side bar menu -->
+      <div id="sidebar-container"></div>
+      <script src="componnent/sidebar.js"></script>
+
+
+      <div class="privacy-content">
+
+        <main class="pt-20">
+               <!-- Hero Section -->
+          <section class="mb-section-gap-sm">
+            <div class="flex flex-col gap-6">
+              <h1 class="font-display-lg text-display-lg text-white mb-6 leading-tight">Partage avec des <span
+                  class="text-primary">tiers</span></h1>
+              <p class="font-body-lg text-body-lg text-on-surface-variant">Chez KayLive, la transparence n'est pas
+                Chez KayLive, la transparence est au cœur de notre engagement. Découvrez comment nous transformons
+                    vos données en expériences de streaming d'exception tout en garantissant une sécurité de niveau
+                    financier.</p>
+            </div>
+          </section>
+
+              </section>
+          <!-- Content Structure -->
+         <section class="flex flex-col gap-base lg:gap-gutter">
+              <!-- Main Content Area -->
+              <div class="lg:col-span-9 space-y-16">
+                <!-- Section 1: Philosophy -->
+                <article class="reveal space-y-8">
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center">
+                      <span class="material-symbols-outlined text-primary" data-icon="policy">policy</span>
+                    </div>
+                    <h2 class="font-headline-md text-headline-md text-white">Notre engagement "Zéro Vente"</h2>
+                  </div>
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="md:col-span-2 space-y-6">
+                      <p class="font-body-md text-body-lg text-on-surface-variant leading-relaxed">
+                        Contrairement aux plateformes financées par la publicité, KayLive repose sur un modèle de
+                        transaction directe. Vos données ne sont pas notre produit. Elles sont le carburant technique
+                        nécessaire à une diffusion 4K fluide et une sécurité de niveau bancaire.
+                      </p>
+                      <p class="font-body-md text-body-md text-on-surface-variant/80">
+                        Nous ne partageons vos données que lorsque cela est strictement indispensable pour vous fournir
+                        le service auquel vous avez souscrit.
+                      </p>
+                    </div>
+                    <div
+                      class="glass-card p-6 rounded-2xl border-white/10 flex flex-col items-center justify-center text-center space-y-4">
+                      <div class="w-16 h-16 rounded-full bg-green-500/10 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-green-400 text-3xl" data-icon="verified_user"
+                          style="font-variation-settings: 'FILL' 1;">verified_user</span>
+                      </div>
+                      <div>
+                        <p class="font-headline-md text-headline-md text-white">100%</p>
+                        <p class="text-label-sm text-on-surface-variant uppercase tracking-widest">Confidentialité</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <!-- Section 2: Partner Categories -->
+                <article class="reveal space-y-10">
+                  <h3 class="font-headline-md text-headline-md text-white border-l-4 border-primary pl-6">Destinataires
+                    des données</h3>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Payments -->
+                    <div class="glass-card p-8 rounded-2xl group hover:border-primary/30 transition-all duration-300">
+                      <div class="flex justify-between items-start mb-6">
+                        <div class="p-3 rounded-xl bg-white/5 group-hover:bg-primary/10 transition-colors">
+                          <span class="material-symbols-outlined text-primary text-3xl"
+                            data-icon="payments">payments</span>
+                        </div>
+                        <div class="flex gap-2">
+                          <span
+                            class="px-3 py-1 rounded-full bg-white/5 text-[10px] font-bold text-on-surface-variant uppercase tracking-tighter">Stripe</span>
+                          <span
+                            class="px-3 py-1 rounded-full bg-white/5 text-[10px] font-bold text-on-surface-variant uppercase tracking-tighter">Crypto</span>
+                        </div>
+                      </div>
+                      <h4 class="font-headline-md text-2xl text-white mb-4">Systèmes de Paiement</h4>
+                      <p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                        Les informations de transaction sont transmises de manière chiffrée à nos processeurs pour
+                        valider vos accès aux événements Live.
+                      </p>
+                      <ul class="space-y-3 border-t border-white/5 pt-6">
+                        <li class="flex items-center gap-3 text-label-md text-on-surface">
+                          <span class="material-symbols-outlined text-primary text-lg"
+                            data-icon="check_circle">check_circle</span>
+                          Certification PCI DSS Level 1
+                        </li>
+                        <li class="flex items-center gap-3 text-label-md text-on-surface">
+                          <span class="material-symbols-outlined text-primary text-lg"
+                            data-icon="check_circle">check_circle</span>
+                          Tokenisation des CB
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- CDN -->
+                    <div class="glass-card p-8 rounded-2xl group hover:border-primary/30 transition-all duration-300">
+                      <div class="flex justify-between items-start mb-6">
+                        <div class="p-3 rounded-xl bg-white/5 group-hover:bg-primary/10 transition-colors">
+                          <span class="material-symbols-outlined text-primary text-3xl" data-icon="bolt">bolt</span>
+                        </div>
+                        <div class="h-8 flex items-center gap-1">
+                          <div class="w-1 bg-primary/40 h-2"></div>
+                          <div class="w-1 bg-primary/40 h-4"></div>
+                          <div class="w-1 bg-primary h-6"></div>
+                          <div class="w-1 bg-primary/40 h-3"></div>
+                        </div>
+                      </div>
+                      <h4 class="font-headline-md text-2xl text-white mb-4">Réseaux de Diffusion</h4>
+                      <p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                        Votre adresse IP est partagée temporairement avec nos serveurs CDN pour assurer une latence
+                        minimale lors du streaming 4K.
+                      </p>
+                      <ul class="space-y-3 border-t border-white/5 pt-6">
+                        <li class="flex items-center gap-3 text-label-md text-on-surface">
+                          <span class="material-symbols-outlined text-primary text-lg"
+                            data-icon="check_circle">check_circle</span>
+                          Optimisation géographique
+                        </li>
+                        <li class="flex items-center gap-3 text-label-md text-on-surface">
+                          <span class="material-symbols-outlined text-primary text-lg"
+                            data-icon="check_circle">check_circle</span>
+                          Logs purgés toutes les 24h
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Analytics - Full Width -->
+                    <div class="md:col-span-2 glass-card p-8 rounded-2xl grid-bg overflow-hidden relative">
+                      <div class="relative z-10 flex flex-col md:flex-row gap-12 items-center">
+                        <div class="flex-1 space-y-4">
+                          <div class="p-3 w-fit rounded-xl bg-white/5">
+                            <span class="material-symbols-outlined text-primary text-3xl"
+                              data-icon="analytics">analytics</span>
+                          </div>
+                          <h4 class="font-headline-md text-2xl text-white">Analytique &amp; Performance</h4>
+                          <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            Nous utilisons des outils d'analyse anonymisés pour comprendre quels combats ou événements
+                            suscitent le plus d'intérêt. Ces données sont agrégées : nous voyons les tendances, pas les
+                            individus.
+                          </p>
+                        </div>
+                        <div class="w-full md:w-auto grid grid-cols-2 gap-4">
+                          <div class="bg-surface p-6 rounded-xl border border-white/5 text-center min-w-[140px]">
+                            <p class="text-primary font-headline-md text-3xl mb-1">0</p>
+                            <p class="text-[10px] text-on-surface-variant uppercase tracking-widest">Trackers tiers</p>
+                          </div>
+                          <div class="bg-surface p-6 rounded-xl border border-white/5 text-center min-w-[140px]">
+                            <p class="text-primary font-headline-md text-3xl mb-1">100%</p>
+                            <p class="text-[10px] text-on-surface-variant uppercase tracking-widest">Anonymisation</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <!-- Section 3: Call to Action -->
+                <article
+                  class="reveal relative p-8 md:p-12 rounded-3xl overflow-hidden bg-surface-container border border-white/10 group">
+                  <div
+                    class="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] rounded-full -mr-32 -mt-32 transition-all group-hover:bg-primary/20">
+                  </div>
+                  <div class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-8">
+                    <div class="max-w-xl text-center md:text-left">
+                      <h3 class="font-headline-md text-headline-md text-white mb-4">Plus de précisions ?</h3>
+                      <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Notre délégué à la protection des données (DPO) est disponible pour répondre à toutes vos
+                        questions concernant le traitement de vos informations personnelles.
+                      </p>
+                    </div>
+                    <button
+                      class="px-8 py-4 bg-primary text-on-primary font-label-md text-label-md rounded-xl hover:shadow-[0_0_30px_rgba(168,85,247,0.4)] hover:-translate-y-0.5 transition-all active:scale-95 whitespace-nowrap">
+                      Contacter le Support
+                    </button>
+                  </div>
+                </article>
+              </div>
+          </section>
+        </main>
+        <!-- Footer Standardized -->
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <div id="footer"></div>
+  <script>
+    async function loadComponent(id, url) {
+      const res = await fetch(url);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+    }
+    loadComponent("header", "../../pages/widget/header.html");
+    loadComponent("footer", "../../pages/widget/footer.html");
+  </script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

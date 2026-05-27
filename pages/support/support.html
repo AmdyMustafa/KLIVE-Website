@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support & Aide | KayLive</title>
+  <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#0A0A0B" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet" />
+  <!-- Tailwind CDN (design tokens via config) -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="../../assets/js/components.js"></script>
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../../assets/css/main.css" />
+  <style>
+    body {
+      background-color: #0A0A0B;
+      color: #e5e2e3;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(40px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .neon-glow:hover {
+      box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+    }
+
+    .hero-gradient {
+      background: radial-gradient(circle at top center, rgba(168, 85, 247, 0.15) 0%, transparent 70%);
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .ticket-edge {
+      mask-image: radial-gradient(circle at calc(100% - 10px) 50%, transparent 10px, black 11px);
+      -webkit-mask-image: radial-gradient(circle at calc(100% - 10px) 50%, transparent 10px, black 11px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TopBar-->
+  <div id="header"></div>
+
+  <main class="pt-20">
+    <!-- Hero Search Section -->
+    <section
+      class="hero-gradient min-h-[400px] flex flex-col items-center justify-center text-center px-6 py-section-gap-sm">
+      <h1 class="font-headline-lg text-4xl md:text-headline-lg mb-8 text-on-background">Comment pouvons-nous vous aider
+        ?</h1>
+      <div class="w-full max-w-2xl relative">
+        <span
+          class="material-symbols-outlined absolute left-6 top-1/2 -translate-y-1/2 text-on-surface-variant text-2xl">search</span>
+        <input
+          class="w-full bg-[#121214] border border-outline-variant/30 rounded-2xl py-6 pl-16 pr-6 text-on-background focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-lg shadow-2xl backdrop-blur-md"
+          placeholder="Search for help..." type="text" />
+        <div class="absolute right-4 top-1/2 -translate-y-1/2 hidden md:block">
+          <kbd class="bg-surface-container-highest px-2 py-1 rounded text-xs text-on-surface-variant font-mono">CMD +
+            K</kbd>
+        </div>
+      </div>
+      <p class="mt-6 text-on-surface-variant font-label-md text-label-md">Popular: <a
+          class="text-primary hover:underline" href="#">Streaming lag</a>, <a class="text-primary hover:underline"
+          href="#">Cancel subscription</a>, <a class="text-primary hover:underline" href="#">PPV Access</a></p>
+    </section>
+    <!-- Category Grid -->
+    <section class="px-6 md:px-margin-desktop max-w-container-max mx-auto py-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+        <!-- Mon compte -->
+        <a href="./mon-compte.html">
+          <div
+            class="glass-card p-8 rounded-2xl group cursor-pointer hover:border-primary/50 transition-all duration-300 neon-glow">
+            <div
+              class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-3xl">account_circle</span>
+            </div>
+            <h3 class="font-headline-md text-2xl mb-2 text-on-background">Mon compte</h3>
+            <p class="text-on-surface-variant font-body-md text-body-md">Gérez votre profil, votre mot de passe et vos
+              préférences personnelles.</p>
+          </div>
+        </a>
+        <!-- Paiements -->
+        <a href="./paiements.html">
+          <div
+            class="glass-card p-8 rounded-2xl group cursor-pointer hover:border-primary/50 transition-all duration-300 neon-glow">
+            <div
+              class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-3xl">payments</span>
+            </div>
+            <h3 class="font-headline-md text-2xl mb-2 text-on-background">Paiements</h3>
+            <p class="text-on-surface-variant font-body-md text-body-md">Cycles de facturation, mises à jour et
+              demandes de remboursement.</p>
+          </div>
+        </a>
+        <!-- Streaming -->
+        <a href="./streaming.html">
+          <div
+            class="glass-card p-8 rounded-2xl group cursor-pointer hover:border-primary/50 transition-all duration-300 neon-glow">
+            <div
+              class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-3xl">live_tv</span>
+            </div>
+            <h3 class="font-headline-md text-2xl mb-2 text-on-background">Streaming</h3>
+            <p class="text-on-surface-variant font-body-md text-body-md">Problèmes techniques, prise en charge de la 4K
+              et compatibilité des appareils.</p>
+          </div>
+        </a>
+        <!-- Sécurité -->
+        <a href="./securite.html">
+          <div
+            class="glass-card p-8 rounded-2xl group cursor-pointer hover:border-primary/50 transition-all duration-300 neon-glow">
+            <div
+              class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-3xl">shield</span>
+            </div>
+            <h3 class="font-headline-md text-2xl mb-2 text-on-background">Sécurité</h3>
+            <p class="text-on-surface-variant font-body-md text-body-md">Authentification à deux facteurs et contrôles
+              de confidentialité.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- Still need help? CTA -->
+    <section class="px-6 md:px-margin-desktop max-w-container-max mx-auto pb-section-gap-lg pt-12">
+      <div class="bg-surface rounded-[22px] p-8 md:p-12 flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2">
+          <h2 class="font-headline-lg text-headline-lg text-white mb-6"> Besoin d'<span class="text-primary">aide</span>
+            ?</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+            Notre équipe d'assistance
+            technique est disponible pour répondre à toutes vos questions techniques ou de facturation. Contactez un
+            spécialiste dès aujourd'hui.
+          </p>
+
+        </div>
+        <div class="md:w-1/2 w-full">
+          <form class="space-y-4">
+            <input
+              class="w-full bg-surface-container-low border border-white/10 rounded-xl px-6 py-4 focus:border-primary focus:ring-1 focus:ring-primary transition-all text-on-surface"
+              placeholder="Email" type="email" />
+            <textarea
+              class="w-full bg-surface-container-low border border-white/10 rounded-xl px-6 py-4 focus:border-primary focus:ring-1 focus:ring-primary transition-all text-on-surface"
+              placeholder="Votre message..." rows="4"></textarea>
+            <button
+              class="w-full bg-gradient-to-r from-[#A855F7] to-[#D8B4FE] text-white py-4 rounded-xl font-headline-md text-[18px] hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] transition-all"
+              type="submit">Envoyer la requête</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+  <script>
+    async function loadComponent(id, url) {
+      const res = await fetch(url);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+    }
+    loadComponent("header", "../../pages/widget/header.html");
+    loadComponent("footer", "../../pages/widget/footer.html");
+  </script>
+
+  <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

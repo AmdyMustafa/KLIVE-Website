@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collecte des données | KayLive Privacy</title>
+  <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#0A0A0B" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet" />
+  <!-- Tailwind CDN (design tokens via config) -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="../../assets/js/components.js"></script>
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="../../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../../assets/css/main.css" />
+  <style>
+    body {
+      background-color: #0A0A0B;
+      color: #e5e2e3;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(40px);
+      -webkit-backdrop-filter: blur(40px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .neon-glow-purple {
+      box-shadow: 0 0 30px rgba(168, 85, 247, 0.15);
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .sidebar-active {
+      background: linear-gradient(90deg, rgba(221, 183, 255, 0.1) 0%, rgba(221, 183, 255, 0.02) 100%);
+      border-left: 4px solid #ddb7ff;
+      color: #ddb7ff;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <div class="container">
+    <div class="privacy-layout">
+
+      <!-- Side bar menu -->
+      <div id="sidebar-container"></div>
+      <script src="componnent/sidebar.js"></script>
+
+
+      <div class="privacy-content">
+        <!-- TopNavBar -->
+        <nav
+          class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 bg-surface/80 backdrop-blur-[40px] border-b border-white/10">
+          <div class="flex items-center gap-8 md:gap-12">
+            <span class="font-headline-md text-headline-md font-bold text-primary tracking-tight">KayLive</span>
+            <div class="hidden md:flex gap-8">
+              <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200"
+                href="#">Home</a>
+              <a class="font-label-md text-label-md text-primary transition-colors duration-200" href="#">Privacy</a>
+              <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200"
+                href="#">Support</a>
+            </div>
+          </div>
+          <div class="flex items-center gap-6">
+            <button
+              class="px-6 py-2.5 bg-gradient-to-r from-primary to-[#D8B4FE] text-on-primary-container font-bold rounded-lg font-label-md hover:scale-[1.02] active:scale-95 transition-all shadow-lg shadow-primary/20 whitespace-nowrap">Ouvrir
+              l'application</button>
+          </div>
+        </nav>
+        <main class="pt-32 pb-section-gap-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+
+          <!-- Content Area -->
+          <div class="lg:col-span-9 space-y-12">
+            <header>
+              <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6">
+                Collecte des <span class="text-primary">données</span>
+              </h1>
+              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Chez KayLive, la protection de votre vie privée est intégrée à chaque interaction. Découvrez comment
+                nous collectons vos informations pour garantir une expérience de streaming fluide et sécurisée.
+              </p>
+            </header>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+              <!-- 1. Account Information -->
+              <section class="glass-card rounded-xl p-8 flex flex-col h-full">
+                <div class="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-6">
+                  <span class="material-symbols-outlined text-primary text-2xl">person</span>
+                </div>
+                <h3 class="font-headline-md text-[24px] text-on-surface mb-4">Informations de compte</h3>
+                <p class="font-body-md text-on-surface-variant mb-8">
+                  Données essentielles pour identifier et personnaliser votre espace membre. Nous limitons la collecte
+                  au strict nécessaire.
+                </p>
+                <div class="grid grid-cols-2 gap-3 mt-auto">
+                  <div class="bg-white/5 p-4 rounded-lg border border-white/5 text-center">
+                    <span class="material-symbols-outlined text-primary block mb-2">badge</span>
+                    <span class="font-label-sm block">Nom complet</span>
+                  </div>
+                  <div class="bg-white/5 p-4 rounded-lg border border-white/5 text-center">
+                    <span class="material-symbols-outlined text-primary block mb-2">mail</span>
+                    <span class="font-label-sm block">Adresse e-mail</span>
+                  </div>
+                  <div class="bg-white/5 p-4 rounded-lg border border-white/5 text-center">
+                    <span class="material-symbols-outlined text-primary block mb-2">account_circle</span>
+                    <span class="font-label-sm block">Photo de profil</span>
+                  </div>
+                  <div class="bg-white/5 p-4 rounded-lg border border-white/5 text-center">
+                    <span class="material-symbols-outlined text-primary block mb-2">verified</span>
+                    <span class="font-label-sm block">Vérification</span>
+                  </div>
+                </div>
+              </section>
+              <!-- 2. Transactions & PPV -->
+              <section class="glass-card rounded-xl p-8 border-primary/20 neon-glow-purple flex flex-col h-full">
+                <div class="flex justify-between items-start mb-6">
+                  <div class="w-12 h-12 rounded-lg bg-secondary/20 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-secondary text-2xl">payments</span>
+                  </div>
+                  <span class="px-3 py-1 bg-primary text-on-primary font-label-sm rounded-full">SÉCURISÉ</span>
+                </div>
+                <h3 class="font-headline-md text-[24px] text-on-surface mb-4">Transactions &amp; PPV</h3>
+                <p class="font-body-md text-on-surface-variant mb-6">
+                  Historique des achats de billets "Pay-Per-View", tokens KayLive et méthodes de paiement enregistrées
+                  via nos partenaires certifiés PCI-DSS.
+                </p>
+                <div class="bg-surface-container-high p-4 rounded-lg border-l-4 border-primary mt-auto">
+                  <p class="font-label-sm text-on-surface-variant italic">
+                    "Nous ne stockons jamais vos numéros de carte complets sur nos serveurs."
+                  </p>
+                </div>
+              </section>
+              <!-- 3. Usage Data -->
+              <section class="glass-card rounded-xl p-8 flex flex-col h-full">
+                <div class="w-12 h-12 rounded-lg bg-primary-container/20 flex items-center justify-center mb-6">
+                  <span class="material-symbols-outlined text-primary-container text-2xl">analytics</span>
+                </div>
+                <h3 class="font-headline-md text-[24px] text-on-surface mb-6">Données d'utilisation</h3>
+                <div class="space-y-6">
+                  <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-primary/60">visibility</span>
+                    <div>
+                      <p class="font-label-md text-on-surface">Interaction flux</p>
+                      <p class="text-[13px] text-on-surface-variant">Visionnage, réactions, chat.</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-primary/60">favorite</span>
+                    <div>
+                      <p class="font-label-md text-on-surface">Préférences</p>
+                      <p class="text-[13px] text-on-surface-variant">Favoris, rappels, suivis.</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-primary/60">devices</span>
+                    <div>
+                      <p class="font-label-md text-on-surface">Appareils</p>
+                      <p class="text-[13px] text-on-surface-variant">Synchronisation multi-écrans.</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- 4. Technical Data -->
+              <section class="glass-card rounded-xl overflow-hidden flex flex-col h-full">
+                <div class="p-8 pb-4">
+                  <div class="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center mb-6">
+                    <span class="material-symbols-outlined text-on-surface text-2xl">terminal</span>
+                  </div>
+                  <h3 class="font-headline-md text-[24px] text-on-surface mb-4">Données techniques</h3>
+                  <p class="font-body-md text-on-surface-variant mb-6">
+                    Collectées pour assurer la stabilité du réseau et prévenir les fraudes.
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="bg-surface-container text-label-sm px-3 py-1 rounded border border-white/5">Adresse
+                      IP</span>
+                    <span class="bg-surface-container text-label-sm px-3 py-1 rounded border border-white/5">OS</span>
+                    <span
+                      class="bg-surface-container text-label-sm px-3 py-1 rounded border border-white/5">Cookies</span>
+                  </div>
+                </div>
+                <div class="mt-auto h-32 relative">
+                  <img alt="Technical data visualization" class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDriiXkWj11ETxFkF6sTdu3-bxls1u_vAqf8NCuVlp6QiYIEZsDjO_3mJIUJrScb-3_NM5QXP8OE6UEp8OtHZm3InbnF8NenLNloZ8opr_aOxTE5Shq4WjfIauFhaJB8u2is8Wt4mKeDUoJADGW7iPYc1wXlIZ_N3ayaBuTf--oYUL-CcoJYAKNvTmPP3ru37aI8nSyvmvmgJXyjA-NAB9Y2G8MpkwEtwINDSzbLgelA7YZN-jhD7lw9kYLJOHXCJj4VhJr-ujADiv2" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-surface-container-high/80 to-transparent"></div>
+                </div>
+              </section>
+            </div>
+            <!-- Control Card -->
+            <section class="glass-card rounded-xl p-8 md:p-12 border-l-8 border-primary relative overflow-hidden">
+              <div class="flex flex-col md:flex-row gap-8 items-center relative z-10">
+                <div class="flex-1 text-center md:text-left">
+                  <h2 class="font-headline-md text-headline-md text-on-surface mb-6">Gardez le contrôle</h2>
+                  <p class="font-body-lg text-on-surface-variant mb-8">
+                    Vous disposez d'un droit d'accès, de rectification et de suppression de vos données à tout moment
+                    depuis les paramètres de votre profil.
+                  </p>
+                  <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <button
+                      class="px-8 py-4 bg-transparent border border-white/20 text-on-surface rounded-lg font-label-md hover:bg-white/5 transition-all">
+                      Nous contacter
+                    </button>
+                  </div>
+                </div>
+                <div class="hidden lg:flex w-48 h-48 items-center justify-center">
+                  <div class="relative w-full h-full flex items-center justify-center">
+                    <div
+                      class="absolute inset-0 border-2 border-primary/30 rounded-full animate-[spin_10s_linear_infinite]">
+                    </div>
+                    <div
+                      class="absolute inset-4 border-2 border-primary/10 rounded-full animate-[spin_6s_linear_infinite_reverse]">
+                    </div>
+                    <span class="material-symbols-outlined text-primary text-6xl">security</span>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute -right-24 -bottom-24 w-64 h-64 bg-primary/10 rounded-full blur-[80px]"></div>
+            </section>
+          </div>
+        </main>
+        <!-- Standardized Footer -->
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+  <script>
+    async function loadComponent(id, url) {
+      const res = await fetch(url);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+    }
+
+    loadComponent("header", "../../pages/widget/header.html");
+    loadComponent("footer", "../../pages/widget/footer.html");
+  </script>
+
+  <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

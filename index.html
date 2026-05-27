@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KayLive | Payez. Regardez. Diffusez.</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#0A0A0B" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet" />
+  <!-- Tailwind CDN (design tokens via config) -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="assets/js/components.js"></script>
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/additionnel.css" />
+  <style>
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(40px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .neon-glow {
+      box-shadow: 0 0 20px rgba(183, 109, 255, 0.3);
+    }
+
+    .text-gradient {
+      background: linear-gradient(to right, #ddb7ff, #b76dff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    body {
+      background-color: #0A0A0B;
+      color: #e5e2e3;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1 0 auto;
+    }
+
+    footer {
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+
+<body class="selection:bg-primary-container selection:text-on-primary-container">
+  
+  <div id="header"></div>
+
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden px-margin-mobile">
+<div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
+<div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-container rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-tertiary-container rounded-full blur-[120px]"></div>
+</div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10 py-section-gap-sm">
+<div class="text-center lg:text-left">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg leading-tight mb-6">
+                        Payez. <span class="text-gradient">Regardez.</span> Diffusez.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl mx-auto lg:mx-0">
+                        Chaque live est une expérience premium accessible uniquement après paiement. Redéfinissez l'économie de l'attention.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+<a class="flex items-center gap-3 bg-surface-container-high border border-outline-variant rounded-xl hover:bg-surface-variant transition-all group px-12 py-6" href="#">
+<span class="material-symbols-outlined text-5xl">ios</span>
+<div class="text-left">
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant">Available on</p>
+<p class="font-bold text-2xl">App Store</p>
+</div>
+</a>
+<a class="flex items-center gap-3 bg-surface-container-high border border-outline-variant rounded-xl hover:bg-surface-variant transition-all group px-12 py-6" href="#">
+<span class="material-symbols-outlined text-5xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<div class="text-left">
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant">Get it on</p>
+<p class="font-bold text-2xl">Google Play</p>
+</div>
+</a>
+</div>
+</div>
+<div class="relative flex justify-center lg:justify-end">
+<div class="relative w-72 md:w-80 h-[600px] rounded-[3rem] border-8 border-surface-container-highest shadow-2xl overflow-hidden bg-black neon-glow animate-pulse-slow">
+<img alt="Live stream preview" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApVm-uG6DR3HlJYdfMDDXcPmINkpQNl3gq5uvK2kb8kg2FZGpDOZ0b5OmqFbd1M-y_gn5GzfoNaU5vZlhaDFymD5nUN25-4r0P2OPVBZTR3g8iHY_lYXquoEpim4B7mvTWP_UIqQeEGukPivO3zHbg5oD8bch5CDxRAsdQ_l0tgN7bmspwnqpzHQKkjI7W0cGCNFICrBCdpm9RaRB-1Ehlx_Ef3z8Vwj149_eMFK2TV40WTBWewx3Kw-pxxhR-YXglZ-wKuK7fTy0d">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute top-8 left-6 bg-primary px-3 py-1 rounded-full text-on-primary font-label-md text-xs">LIVE</div>
+<div class="absolute bottom-10 left-6 right-6">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-primary-container"></div>
+<div>
+<p class="font-bold text-sm">KayLive Artist</p>
+<p class="text-xs text-on-surface-variant">Exclusive Performance</p>
+</div>
+</div>
+<div class="glass-card p-3 rounded-lg text-center transition-all duration-700 opacity-100 translate-y-0">
+<p class="font-bold text-primary">Accès : 5.00 €</p>
+</div>
+</div>
+</div>
+<!-- Ambient Glow -->
+<div class="absolute -z-10 w-64 h-64 bg-primary/30 rounded-full blur-[80px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+</div>
+</div>
+</section>
+<!-- Value Proposition -->
+<section class="py-section-gap-sm px-margin-mobile max-w-container-max mx-auto text-center">
+<h2 class="font-headline-lg text-headline-lg mb-8">L'Exclusivité à la <span class="text-gradient">Demande</span></h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="glass-card p-10 rounded-2xl flex flex-col items-center text-center transition-all duration-700 opacity-100 translate-y-0">
+<div class="w-16 h-16 rounded-full bg-primary-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-4xl">no_accounts</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-2xl mb-4">Zéro Abonnement</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Ne payez que pour ce que vous regardez. Pas de frais mensuels cachés, pas d'engagement.</p>
+</div>
+<div class="glass-card p-10 rounded-2xl flex flex-col items-center text-center transition-all duration-700 opacity-100 translate-y-0">
+<div class="w-16 h-16 rounded-full bg-primary-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-4xl">diamond</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-2xl mb-4">Qualité Premium</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Pas de contenu gratuit. Chaque live est une production de haute qualité valorisée par son créateur.</p>
+</div>
+<div class="glass-card p-10 rounded-2xl flex flex-col items-center text-center transition-all duration-700 opacity-100 translate-y-0">
+<div class="w-16 h-16 rounded-full bg-primary-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-4xl">payments</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-2xl mb-4">Prix Libres</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Les créateurs fixent leurs propres tarifs. Vous décidez si l'expérience en vaut le coût.</p>
+</div>
+</div>
+</section>
+<!-- Key Features Grid -->
+<section class="py-section-gap-sm bg-surface-container-lowest relative overflow-hidden">
+<div class="px-margin-mobile max-w-container-max mx-auto relative z-10">
+<div class="mb-16">
+<p class="text-primary font-label-md tracking-widest uppercase mb-4">Fonctionnalités</p>
+<h2 class="font-headline-lg text-headline-lg">Une technologie <span class="text-gradient">sans frontières</span></h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Feature 1 -->
+<div class="glass-card p-8 rounded-2xl border-l-4 border-l-primary hover:translate-y-[-8px] transition-all duration-300 duration-700 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-primary mb-6 text-3xl">swipe_vertical</span>
+<h4 class="font-headline-md text-xl mb-3">Feed Vertical Infini</h4>
+<p class="font-body-md text-on-surface-variant">Découvrez des lives en un swipe, optimisé pour une consommation mobile fluide.</p>
+</div>
+<!-- Feature 2 -->
+<div class="glass-card p-8 rounded-2xl hover:translate-y-[-8px] transition-all duration-300 duration-700 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-primary mb-6 text-3xl">chat</span>
+<h4 class="font-headline-md text-xl mb-3">Chat en Temps Réel</h4>
+<p class="font-body-md text-on-surface-variant">Interagissez instantanément avec vos créateurs préférés et la communauté.</p>
+</div>
+<!-- Feature 3 -->
+<div class="glass-card p-8 rounded-2xl hover:translate-y-[-8px] transition-all duration-300 duration-700 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-primary mb-6 text-3xl">groups</span>
+<h4 class="font-headline-md text-xl mb-3">Multi-Guest Lives</h4>
+<p class="font-body-md text-on-surface-variant">Collaborez en direct avec jusqu'à 4 invités pour des débats ou performances.</p>
+</div>
+<!-- Feature 4 -->
+<div class="glass-card p-8 rounded-2xl hover:translate-y-[-8px] transition-all duration-300 duration-700 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-primary mb-6 text-3xl">swords</span>
+<h4 class="font-headline-md text-xl mb-3">PK Battles</h4>
+<p class="font-body-md text-on-surface-variant">Affrontez d'autres streamers et laissez vos fans décider du vainqueur par leurs dons.</p>
+</div>
+<!-- Feature 5 -->
+<div class="glass-card p-8 rounded-2xl hover:translate-y-[-8px] transition-all duration-300 duration-700 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-primary mb-6 text-3xl">account_balance_wallet</span>
+<h4 class="font-headline-md text-xl mb-3">Monétisation Instantanée</h4>
+<p class="font-body-md text-on-surface-variant">Recevez vos gains directement après chaque session. Retrait rapide et sécurisé.</p>
+</div>
+<!-- Feature 6 -->
+<div class="glass-card p-8 rounded-2xl border-r-4 border-r-primary hover:translate-y-[-8px] transition-all duration-300 duration-700 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-primary mb-6 text-3xl">notifications_active</span>
+<h4 class="font-headline-md text-xl mb-3">Push Notifications</h4>
+<p class="font-body-md text-on-surface-variant">Ne manquez jamais un live exclusif grâce à nos alertes intelligentes personnalisées.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- How it Works -->
+<section class="py-section-gap-lg px-margin-mobile max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg">Comment ça <span class="text-gradient">marche</span> ?</h2>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-between gap-12 relative">
+<!-- Step 1 -->
+<div class="flex-1 text-center group">
+<div class="w-24 h-24 rounded-full border-2 border-primary/30 flex items-center justify-center mx-auto mb-6 group-hover:border-primary group-hover:neon-glow transition-all duration-500">
+<span class="font-display-lg text-3xl text-primary">01</span>
+</div>
+<h4 class="font-headline-md text-xl mb-2">Ouvrez l'App</h4>
+<p class="text-on-surface-variant">Explorez les lives à venir ou en cours.</p>
+</div>
+<!-- Connector -->
+<div class="hidden md:block h-[2px] bg-outline-variant/30 flex-grow mt-[-40px]"></div>
+<!-- Step 2 -->
+<div class="flex-1 text-center group">
+<div class="w-24 h-24 rounded-full border-2 border-primary/30 flex items-center justify-center mx-auto mb-6 group-hover:border-primary group-hover:neon-glow transition-all duration-500">
+<span class="font-display-lg text-3xl text-primary">02</span>
+</div>
+<h4 class="font-headline-md text-xl mb-2">Payez l'accès</h4>
+<p class="text-on-surface-variant">Un clic sécurisé via votre moyen de paiement local.</p>
+</div>
+<!-- Connector -->
+<div class="hidden md:block h-[2px] bg-outline-variant/30 flex-grow mt-[-40px]"></div>
+<!-- Step 3 -->
+<div class="flex-1 text-center group">
+<div class="w-24 h-24 rounded-full border-2 border-primary/30 flex items-center justify-center mx-auto mb-6 group-hover:border-primary group-hover:neon-glow transition-all duration-500">
+<span class="font-display-lg text-3xl text-primary">03</span>
+</div>
+<h4 class="font-headline-md text-xl mb-2">Profitez</h4>
+<p class="text-on-surface-variant">Vivez une expérience immersive sans interruption.</p>
+</div>
+</div>
+</section>
+<!-- Creator Economy -->
+<section class="py-section-gap-lg px-margin-mobile max-w-container-max mx-auto overflow-hidden">
+<div class="glass-card rounded-[2.5rem] p-12 lg:p-20 relative overflow-hidden grid grid-cols-1 lg:grid-cols-2 gap-16 items-center transition-all duration-700 opacity-100 translate-y-0">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 to-transparent"></div>
+<div>
+<span class="bg-primary/20 text-primary px-4 py-1.5 rounded-full font-label-md text-xs mb-6 inline-block">POUR LES CRÉATEURS</span>
+<h2 class="font-headline-lg text-headline-lg mb-6 leading-tight">Monétisez chaque <span class="text-gradient">seconde</span>.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">
+                        Fini la dépendance aux publicités ou aux algorithmes imprévisibles. Reprenez le contrôle de vos revenus en fixant la valeur réelle de votre talent.
+                    </p>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<p class="font-body-md text-on-surface">Paiements directs des fans</p>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<p class="font-body-md text-on-surface">Analytiques de revenus en temps réel</p>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<p class="font-body-md text-on-surface">Gestion d'audience exclusive</p>
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="glass-card p-6 rounded-2xl transform group-hover:scale-[1.02] transition-transform duration-500 transition-all duration-700 opacity-100 translate-y-0">
+<div class="flex justify-between items-center mb-8">
+<h5 class="font-headline-md text-lg">Earnings Overview</h5>
+<span class="material-symbols-outlined">more_horiz</span>
+</div>
+<div class="space-y-6">
+<div class="h-40 w-full bg-surface-container-highest rounded-lg relative overflow-hidden">
+<div class="absolute bottom-0 left-0 w-full h-3/4 bg-gradient-to-t from-primary/20 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex items-end gap-2 h-20">
+<div class="flex-1 bg-primary/40 h-1/2 rounded-t-sm"></div>
+<div class="flex-1 bg-primary/40 h-3/4 rounded-t-sm"></div>
+<div class="flex-1 bg-primary/60 h-2/3 rounded-t-sm"></div>
+<div class="flex-1 bg-primary h-full rounded-t-sm shadow-lg"></div>
+<div class="flex-1 bg-primary/50 h-3/4 rounded-t-sm"></div>
+<div class="flex-1 bg-primary/30 h-1/2 rounded-t-sm"></div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-black/20 p-4 rounded-xl">
+<p class="text-xs text-on-surface-variant">Today</p>
+<p class="font-display-lg text-xl">€1,240.50</p>
+</div>
+<div class="bg-black/20 p-4 rounded-xl">
+<p class="text-xs text-on-surface-variant">Active Fans</p>
+<p class="font-display-lg text-xl">4.8k</p>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute -top-6 -right-6 glass-card p-4 rounded-xl hidden md:block neon-glow transition-all duration-700 opacity-100 translate-y-0">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-400">trending_up</span>
+<p class="text-sm font-bold">+24% this week</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-section-gap-lg px-margin-mobile text-center relative mb-12">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-10 pointer-events-none">
+<div class="w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary via-transparent to-transparent"></div>
+</div>
+<div class="max-w-3xl mx-auto relative z-10">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-8">Prêt pour <span class="text-gradient">l'exclusivité</span> ?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                    Rejoignez les milliers de passionnés qui transforment déjà le streaming en une expérience premium. Téléchargez KayLive aujourd'hui.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="bg-white text-black px-10 py-5 rounded-full font-label-md text-lg hover:bg-primary transition-all duration-300 transform hover:scale-105">Commencer maintenant</button>
+<button class="glass-card text-white px-10 py-5 rounded-full font-label-md text-lg hover:bg-surface-variant transition-all duration-300 transform hover:scale-105 border border-outline-variant duration-700 opacity-100 translate-y-0">Voir la démo</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer - Replaced from SCREEN_6 -->
+ <!-- Footer -->
+  
+  <!-- Footer -->
+  <div id="footer"></div>
+  <script>
+    async function loadComponent(id, url) {
+      const res = await fetch(url);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+    }
+    loadComponent("header", "../../pages/widget/header.html");
+    loadComponent("footer", "../../pages/widget/footer.html");
+  </script>
+<script>
+        // Atmospheric Micro-interactions
+        document.addEventListener('mousemove', (e) => {
+            const glow = document.querySelector('.absolute.top-1/4.left-1/4');
+            if(glow) {
+                const moveX = (e.clientX - window.innerWidth / 2) * 0.05;
+                const moveY = (e.clientY - window.innerHeight / 2) * 0.05;
+                glow.style.transform = `translate(${moveX}px, ${moveY}px)`;
+            }
+        });
+
+        // Simple scroll reveal effect for cards
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(card);
+        });
+    </script>
+
+
+</body>
+
+</html>
