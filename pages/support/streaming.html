@@ -1,270 +1,268 @@
 <!DOCTYPE html>
 <html lang="fr" class="dark">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Le Streaming PPV | Blog KayLive</title>
-    <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml"/>
-  <meta name="theme-color" content="#0A0A0B"/>
+  <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#0A0A0B" />
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet" />
   <!-- Tailwind CDN (design tokens via config) -->
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script src="../../assets/js/components.js"></script>
   <!-- Our CSS -->
-  <link rel="stylesheet" href="../../assets/css/tokens.css"/>
-  <link rel="stylesheet" href="../../assets/css/main.css"/>
-<style>
-.glass-panel {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(40px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .neon-glow {
-            box-shadow: 0 0 20px rgba(221, 183, 255, 0.15);
-        }
-        .perforated-edge {
-            mask-image: radial-gradient(circle at 100% 50%, transparent 12px, black 13px);
-            -webkit-mask-image: radial-gradient(circle at 100% 50%, transparent 12px, black 13px);
-        }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #0A0A0B; }
-        ::-webkit-scrollbar-thumb { background: #353436; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #ddb7ff; }
-</style>
+  <link rel="stylesheet" href="../../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../../assets/css/main.css" />
+  <style>
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(40px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .neon-glow {
+      box-shadow: 0 0 20px rgba(221, 183, 255, 0.15);
+    }
+
+    .perforated-edge {
+      mask-image: radial-gradient(circle at 100% 50%, transparent 12px, black 13px);
+      -webkit-mask-image: radial-gradient(circle at 100% 50%, transparent 12px, black 13px);
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #0A0A0B;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #353436;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ddb7ff;
+    }
+  </style>
 </head>
+
 <body>
-<header class="nav" id="mainNav">
-  <a href="../../index.html" class="nav-logo">KayLive</a>
-  <div class="nav-links">
-    <a href="../../index.html" class="">Accueil</a>
-    <a href="../../pages/privacy/collecte.html" class="">Privacy</a>
-    <a href="../../pages/support.html" class="">Support</a>
-    <a href="../../pages/blog/streaming.html" class=" active">Blog</a>
-  </div>
-  <div class="nav-cta">
-    <a href="#" class="btn btn-primary btn-pill">
-      <span class="material-symbols-outlined" style="font-size:18px;font-family:'Material Symbols Outlined';font-style:normal">open_in_new</span>
-      Ouvrir l'app
-    </a>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-<nav class="mobile-menu" id="mobileMenu">
-  <a href="../../index.html">Accueil</a>
-  <a href="../../pages/privacy/collecte.html">Privacy</a>
-  <a href="../../pages/support.html">Support</a>
-  <a href="../../pages/blog/streaming.html" class="active">Blog</a>
-  <a href="#" class="mobile-menu-cta">Ouvrir l'application</a>
-</nav>
-<!-- Top Navigation -->
-<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-[40px] border-b border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
-<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop h-20">
-<div class="font-headline-md text-headline-md font-bold tracking-tighter text-primary">KayLive</div>
-<div class="hidden md:flex items-center gap-base">
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors px-4 py-2 rounded-lg hover:bg-white/5" href="#">Home</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors px-4 py-2 rounded-lg hover:bg-white/5" href="#">Privacy</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors px-4 py-2 rounded-lg hover:bg-white/5" href="#">Support</a>
-</div>
-<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary-container font-label-md text-label-md px-6 py-2.5 rounded-lg hover:scale-105 transition-all shadow-lg shadow-primary/20">Ouvrir l'application</button>
-</div>
-</nav>
-<!-- Main Content Canvas -->
-<main class="pt-20">
-<!-- Hero Section -->
-<header class="relative w-full h-[60vh] flex items-center justify-center overflow-hidden">
-<div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover opacity-40" data-alt="A cinematic, high-definition overhead shot of a futuristic dark media room with glowing purple neon accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfhnMlSdLDwXHCOGtVPTXJZ4xRymQj9j112sy-HgRirHYJueZ8lGwz72aAZtfEx6KRX21V7ZMbWSbKKxdn8aqJZmkdzy-LTqHu9t9WsTwrB7wC-ImPNLqaxB00do8GIGc9Sa4YFbBYBhqSyaRMXTILiCiu5ar1cgKQI8q2VtYX3doarcRExjVrZ6k4YbhnJYhm9stdRCP8GDEZdUYqV_9foBbEN1Y03mgnoEFGLqDPeWzrk2Y3DRaiVltXm_IhKDVpNaH4KBPC0Zuo"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
-</div>
-<div class="relative z-10 max-w-container-max mx-auto px-margin-desktop text-center">
-<div class="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 border border-primary/30 rounded-full mb-6">
-<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Guide Premium</span>
-</div>
-<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6">Optimiser votre expérience de streaming 4K</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Découvrez comment transformer votre salon en salle de cinéma d'élite grâce à nos protocoles d'optimisation technique pour le streaming ultra-haute définition.</p>
-</div>
-</header>
-<!-- Article Content -->
-<section class="max-w-container-max mx-auto px-margin-desktop py-section-gap-sm">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter transition-all duration-1000 opacity-100">
-<!-- Sticky Sidebar (Table of Contents) -->
-<aside class="hidden lg:block lg:col-span-3">
-<div class="sticky top-28 glass-panel rounded-xl p-6">
-<h3 class="font-label-md text-label-md text-white mb-6 uppercase tracking-wider opacity-60">Sommaire</h3>
-<ul class="space-y-4">
-<li class=""><a class="font-label-md text-label-md text-primary hover:translate-x-2 transition-transform inline-block" href="#requirements">Exigences Techniques</a></li>
-<li class=""><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#compatibility">Compatibilité Appareils</a></li>
-<li class=""><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#troubleshooting">Dépannage &amp; Latence</a></li>
-<li class=""><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#calibration">Calibration Visuelle</a></li>
-</ul>
-<div class="mt-8 pt-8 border-t border-white/10">
-<div class="perforated-edge bg-secondary-container/30 p-4 rounded-lg">
-<p class="font-label-sm text-label-sm text-secondary mb-2">PRO TIP</p>
-<p class="font-body-md text-body-md text-on-surface-variant italic">Utilisez toujours une connexion Ethernet pour une stabilité 4K absolue.</p>
-</div>
-</div>
-</div>
-</aside>
-<!-- Article Body -->
-<article class="lg:col-span-9 space-y-section-gap-sm">
-<!-- Section: Requirements -->
-<div class="space-y-8" id="requirements">
-<h2 class="font-headline-lg text-headline-lg text-white">Le Protocole Technique</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                            Le streaming en 4K (Ultra HD) ne se résume pas seulement à posséder le bon écran. C'est une synergie entre votre bande passante, votre matériel de décodage et la qualité de votre réseau local. Pour une expérience KayLive fluide, une vitesse constante de **25 Mbps** est le strict minimum requis.
-                        </p>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-<div class="glass-panel p-8 rounded-xl border-l-4 border-primary">
-<span class="material-symbols-outlined text-primary mb-4" style="font-size: 40px;">speed</span>
-<h4 class="font-headline-md text-headline-md text-white mb-2">Bande Passante</h4>
-<ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> 4K HDR: 25-50 Mbps</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> HD 1080p: 10-15 Mbps</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Stabilité Jitter: &lt; 30ms</li>
-</ul>
-</div>
-<div class="glass-panel p-8 rounded-xl border-l-4 border-secondary">
-<span class="material-symbols-outlined text-secondary mb-4" style="font-size: 40px;">settings_ethernet</span>
-<h4 class="font-headline-md text-headline-md text-white mb-2">Connectivité</h4>
-<ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Câble Cat6 ou supérieur</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Wi-Fi 6 (802.11ax) recommandé</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Priorisation QoS sur le routeur</li>
-</ul>
-</div>
-</div>
-</div>
-<!-- Section: Bento Grid Compatibility -->
-<div class="space-y-8" id="compatibility">
-<h2 class="font-headline-lg text-headline-lg text-white">Écosystème &amp; Compatibilité</h2>
-<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-auto md:h-[500px]">
-<div class="md:col-span-2 md:row-span-2 glass-panel rounded-2xl overflow-hidden relative group">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60" data-alt="A premium smart TV mounted on a minimalist dark wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX-XcUGPA1B5cooAy37i9-Gf9M-oP9kP7sy179W1CJFS7UeXytabNV3P18uur9ckcqEs1FQhI77ZjdGV14Pbh0Cn923yuYCoVlysBI_2813I859uDrAWi79XDcnNWr-cL3yzjk3llROMBWn4D2B6QMF7srh50KUkXW1KpoHY1qaDek0BGbmjNH2BMf5v7GKbO6UOKAcc9_iu10vWEf7_t-7s3PGjM0dOEV8gn9aQBTcPZQaHu5IfFHWwDMmOtGsxwWAe83t-ChpVdS"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent p-8 flex flex-col justify-end">
-<span class="font-label-sm text-label-sm text-primary mb-2">SMART TVS</span>
-<h3 class="font-headline-md text-headline-md text-white">Optimisé pour OLED &amp; QLED</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Intégration native pour les systèmes LG WebOS et Samsung Tizen.</p>
-</div>
-</div>
-<div class="md:col-span-2 glass-panel rounded-2xl p-8 flex flex-col justify-center border border-primary/20">
-<h4 class="font-headline-md text-headline-md text-primary mb-2">Streaming Sticks</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">Apple TV 4K et Nvidia Shield Pro offrent le meilleur décodage matériel pour les flux à haut débit.</p>
-</div>
-<div class="md:col-span-1 glass-panel rounded-2xl p-6 flex flex-col items-center justify-center text-center">
-<span class="material-symbols-outlined text-secondary text-4xl mb-2">laptop_mac</span>
-<span class="font-label-md text-label-md text-white">Desktop</span>
-</div>
-<div class="md:col-span-1 glass-panel rounded-2xl p-6 flex flex-col items-center justify-center text-center">
-<span class="material-symbols-outlined text-secondary text-4xl mb-2">videogame_asset</span>
-<span class="font-label-md text-label-md text-white">Consoles</span>
-</div>
-</div>
-</div>
-<!-- Section: Troubleshooting -->
-<div class="space-y-8 bg-surface-container-low p-10 rounded-3xl border border-white/5" id="troubleshooting">
-<div class="flex items-start gap-6">
-<div class="p-4 bg-error-container/30 rounded-2xl">
-<span class="material-symbols-outlined text-error" style="font-size: 48px;">warning</span>
-</div>
-<div>
-<h2 class="font-headline-lg text-headline-lg text-white mb-4">Dépannage Rapide</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Ne laissez pas un lag ruiner votre événement exclusif. Voici notre check-list de survie.</p>
-<div class="space-y-4">
-<div class="flex gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors cursor-pointer group">
-<div class="font-display-lg-mobile text-display-lg-mobile text-white/10 group-hover:text-primary/30 transition-colors">01</div>
-<div>
-<h5 class="font-label-md text-label-md text-white">Flush DNS &amp; Cache</h5>
-<p class="font-body-md text-body-md text-on-surface-variant">Réinitialisez vos tables de routage pour une connexion directe aux serveurs KayLive.</p>
-</div>
-</div>
-<div class="flex gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors cursor-pointer group">
-<div class="font-display-lg-mobile text-display-lg-mobile text-white/10 group-hover:text-primary/30 transition-colors">02</div>
-<div>
-<h5 class="font-label-md text-label-md text-white">Désactiver le VPN</h5>
-<p class="font-body-md text-body-md text-on-surface-variant">Les tunnels de cryptage peuvent réduire votre vitesse de 30% et augmenter le ping.</p>
-</div>
-</div>
-<div class="flex gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors cursor-pointer group">
-<div class="font-display-lg-mobile text-display-lg-mobile text-white/10 group-hover:text-primary/30 transition-colors">03</div>
-<div>
-<h5 class="font-label-md text-label-md text-white">Mise à jour Firmware</h5>
-<p class="font-body-md text-body-md text-on-surface-variant">Assurez-vous que votre décodeur gère les derniers codecs HEVC/H.265.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Call to Action Card -->
-<div class="relative glass-panel rounded-3xl p-12 overflow-hidden neon-glow">
-<div class="absolute -right-20 -top-20 w-64 h-64 bg-primary/20 rounded-full blur-[100px]"></div>
-<div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
-<div class="max-w-md">
-<h3 class="font-headline-lg text-headline-lg text-white mb-4">Prêt pour l'élite ?</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Accédez dès maintenant à notre catalogue exclusif en 4K natif et Dolby Atmos.</p>
-</div>
-<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary-container px-10 py-5 rounded-full font-headline-md text-headline-md whitespace-nowrap hover:scale-105 transition-all">S'abonner Maintenant</button>
-</div>
-</div>
-</article>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand-name">KayLive</div>
-        <p class="footer-brand-desc">Redéfinir le streaming pour une nouvelle ère numérique. La qualité, l'exclusivité et la juste rémunération au cœur de notre ADN.</p>
-        <div class="footer-socials">
-          <a href="#" class="footer-social" aria-label="Site"><span class="material-symbols-outlined" style="font-family:'Material Symbols Outlined';font-style:normal">public</span></a>
-          <a href="#" class="footer-social" aria-label="Email"><span class="material-symbols-outlined" style="font-family:'Material Symbols Outlined';font-style:normal">mail</span></a>
-          <a href="#" class="footer-social" aria-label="Share"><span class="material-symbols-outlined" style="font-family:'Material Symbols Outlined';font-style:normal">share</span></a>
+  
+
+  <!-- TopBar-->
+  <div id="header"></div>
+
+  <!-- Main Content Canvas -->
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <header class="relative w-full h-[60vh] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img class="w-full h-full object-cover opacity-40"
+          data-alt="A cinematic, high-definition overhead shot of a futuristic dark media room with glowing purple neon accents."
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfhnMlSdLDwXHCOGtVPTXJZ4xRymQj9j112sy-HgRirHYJueZ8lGwz72aAZtfEx6KRX21V7ZMbWSbKKxdn8aqJZmkdzy-LTqHu9t9WsTwrB7wC-ImPNLqaxB00do8GIGc9Sa4YFbBYBhqSyaRMXTILiCiu5ar1cgKQI8q2VtYX3doarcRExjVrZ6k4YbhnJYhm9stdRCP8GDEZdUYqV_9foBbEN1Y03mgnoEFGLqDPeWzrk2Y3DRaiVltXm_IhKDVpNaH4KBPC0Zuo" />
+        <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+      </div>
+      <div class="relative z-10 max-w-container-max mx-auto px-margin-desktop text-center">
+        <div class="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 border border-primary/30 rounded-full mb-6">
+          <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Guide Premium</span>
         </div>
+        <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6">
+          Optimiser votre expérience de streaming 4K</h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Découvrez comment transformer
+          votre salon en salle de cinéma d'élite grâce à nos protocoles d'optimisation technique pour le streaming
+          ultra-haute définition.</p>
       </div>
-      <div class="footer-col">
-        <h6>Support</h6>
-        <ul>
-          <li><a href="../../pages/support.html">Centre d'aide</a></li>
-          <li><a href="#">Devenir Streamer</a></li>
-          <li><a href="#">Espace Presse</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h6>Légal</h6>
-        <ul>
-          <li><a href="../../pages/privacy/conditions.html">Conditions d'utilisation</a></li>
-          <li><a href="../../pages/privacy/collecte.html">Politique de confidentialité</a></li>
-          <li><a href="../../pages/legal/mentions.html">Mentions légales</a></li>
-          <li><a href="../../pages/privacy/collecte.html#cookies">Cookies</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h6>Newsletter</h6>
-        <p class="footer-newsletter-desc">Restez informé des prochains lives exclusifs.</p>
-        <form class="footer-form" data-form="newsletter" onsubmit="return false;">
-          <input type="email" placeholder="votre@email.com" required/>
-          <button type="submit" aria-label="S'abonner">
-            <span class="material-symbols-outlined" style="font-family:'Material Symbols Outlined';font-style:normal">send</span>
-          </button>
-        </form>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copy">© 2025 KayLive. Tous droits réservés.</p>
-      <div class="footer-payments">
-        <span>WAVE</span><span>ORANGE MONEY</span><span>PAYPAL</span><span>STRIPE</span>
-      </div>
-    </div>
-  </div>
-</footer>
-<script src="../../assets/js/main.js"></script>
+    </header>
+    <!-- Article Content -->
+    <section class="max-w-container-max mx-auto px-margin-desktop py-section-gap-sm">
+      <!-- <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter transition-all duration-1000 opacity-100">
+       
+        <aside class="hidden lg:block lg:col-span-3">
+          <div class="sticky top-28 glass-panel rounded-xl p-6">
+            <h3 class="font-label-md text-label-md text-white mb-6 uppercase tracking-wider opacity-60">Sommaire</h3>
+            <ul class="space-y-4">
+              <li class=""><a
+                  class="font-label-md text-label-md text-primary hover:translate-x-2 transition-transform inline-block"
+                  href="#requirements">Exigences Techniques</a></li>
+              <li class=""><a
+                  class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                  href="#compatibility">Compatibilité Appareils</a></li>
+              <li class=""><a
+                  class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                  href="#troubleshooting">Dépannage &amp; Latence</a></li>
+              <li class=""><a
+                  class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                  href="#calibration">Calibration Visuelle</a></li>
+            </ul>
+            <div class="mt-8 pt-8 border-t border-white/10">
+              <div class="perforated-edge bg-secondary-container/30 p-4 rounded-lg">
+                <p class="font-label-sm text-label-sm text-secondary mb-2">PRO TIP</p>
+                <p class="font-body-md text-body-md text-on-surface-variant italic">Utilisez toujours une connexion
+                  Ethernet pour une stabilité 4K absolue.</p>
+              </div>
+            </div>
+          </div>
+        </aside>-->
+        <!-- Article Body -->
+        <article class="lg:col-span-9 space-y-section-gap-sm">
+          <!-- Section: Requirements -->
+          <div class="space-y-8" id="requirements">
+            <h2 class="font-headline-lg text-headline-lg text-white">Le Protocole Technique</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              Le streaming en 4K (Ultra HD) ne se résume pas seulement à posséder le bon écran. C'est une synergie entre
+              votre bande passante, votre matériel de décodage et la qualité de votre réseau local. Pour une expérience
+              KayLive fluide, une vitesse constante de **25 Mbps** est le strict minimum requis.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+              <div class="glass-panel p-8 rounded-xl border-l-4 border-primary">
+                <span class="material-symbols-outlined text-primary mb-4" style="font-size: 40px;">speed</span>
+                <h4 class="font-headline-md text-headline-md text-white mb-2">Bande Passante</h4>
+                <ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> 4K HDR:
+                    25-50 Mbps</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> HD
+                    1080p: 10-15 Mbps</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                    Stabilité Jitter: &lt; 30ms</li>
+                </ul>
+              </div>
+              <div class="glass-panel p-8 rounded-xl border-l-4 border-secondary">
+                <span class="material-symbols-outlined text-secondary mb-4"
+                  style="font-size: 40px;">settings_ethernet</span>
+                <h4 class="font-headline-md text-headline-md text-white mb-2">Connectivité</h4>
+                <ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Câble
+                    Cat6 ou supérieur</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Wi-Fi
+                    6 (802.11ax) recommandé</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Priorisation QoS sur le routeur</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Section: Bento Grid Compatibility -->
+          <div class="space-y-8" id="compatibility">
+            <h2 class="font-headline-lg text-headline-lg text-white">Écosystème &amp; Compatibilité</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-auto md:h-[500px]">
+              <div class="md:col-span-2 md:row-span-2 glass-panel rounded-2xl overflow-hidden relative group">
+                <img
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60"
+                  data-alt="A premium smart TV mounted on a minimalist dark wall"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX-XcUGPA1B5cooAy37i9-Gf9M-oP9kP7sy179W1CJFS7UeXytabNV3P18uur9ckcqEs1FQhI77ZjdGV14Pbh0Cn923yuYCoVlysBI_2813I859uDrAWi79XDcnNWr-cL3yzjk3llROMBWn4D2B6QMF7srh50KUkXW1KpoHY1qaDek0BGbmjNH2BMf5v7GKbO6UOKAcc9_iu10vWEf7_t-7s3PGjM0dOEV8gn9aQBTcPZQaHu5IfFHWwDMmOtGsxwWAe83t-ChpVdS" />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-background to-transparent p-8 flex flex-col justify-end">
+                  <span class="font-label-sm text-label-sm text-primary mb-2">SMART TVS</span>
+                  <h3 class="font-headline-md text-headline-md text-white">Optimisé pour OLED &amp; QLED</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant">Intégration native pour les systèmes LG
+                    WebOS et Samsung Tizen.</p>
+                </div>
+              </div>
+              <div
+                class="md:col-span-2 glass-panel rounded-2xl p-8 flex flex-col justify-center border border-primary/20">
+                <h4 class="font-headline-md text-headline-md text-primary mb-2">Streaming Sticks</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant">Apple TV 4K et Nvidia Shield Pro offrent le
+                  meilleur décodage matériel pour les flux à haut débit.</p>
+              </div>
+              <div
+                class="md:col-span-1 glass-panel rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+                <span class="material-symbols-outlined text-secondary text-4xl mb-2">laptop_mac</span>
+                <span class="font-label-md text-label-md text-white">Desktop</span>
+              </div>
+              <div
+                class="md:col-span-1 glass-panel rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+                <span class="material-symbols-outlined text-secondary text-4xl mb-2">videogame_asset</span>
+                <span class="font-label-md text-label-md text-white">Consoles</span>
+              </div>
+            </div>
+          </div>
+          <!-- Section: Troubleshooting -->
+          <div class="space-y-8 bg-surface-container-low p-10 rounded-3xl border border-white/5" id="troubleshooting">
+            <div class="flex items-start gap-6">
+              <div class="p-4 bg-error-container/30 rounded-2xl">
+                <span class="material-symbols-outlined text-error" style="font-size: 48px;">warning</span>
+              </div>
+              <div>
+                <h2 class="font-headline-lg text-headline-lg text-white mb-4">Dépannage Rapide</h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Ne laissez pas un lag ruiner votre
+                  événement exclusif. Voici notre check-list de survie.</p>
+                <div class="space-y-4">
+                  <div class="flex gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors cursor-pointer group">
+                    <div
+                      class="font-display-lg-mobile text-display-lg-mobile text-white/10 group-hover:text-primary/30 transition-colors">
+                      01</div>
+                    <div>
+                      <h5 class="font-label-md text-label-md text-white">Flush DNS &amp; Cache</h5>
+                      <p class="font-body-md text-body-md text-on-surface-variant">Réinitialisez vos tables de routage
+                        pour une connexion directe aux serveurs KayLive.</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors cursor-pointer group">
+                    <div
+                      class="font-display-lg-mobile text-display-lg-mobile text-white/10 group-hover:text-primary/30 transition-colors">
+                      02</div>
+                    <div>
+                      <h5 class="font-label-md text-label-md text-white">Désactiver le VPN</h5>
+                      <p class="font-body-md text-body-md text-on-surface-variant">Les tunnels de cryptage peuvent
+                        réduire votre vitesse de 30% et augmenter le ping.</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors cursor-pointer group">
+                    <div
+                      class="font-display-lg-mobile text-display-lg-mobile text-white/10 group-hover:text-primary/30 transition-colors">
+                      03</div>
+                    <div>
+                      <h5 class="font-label-md text-label-md text-white">Mise à jour Firmware</h5>
+                      <p class="font-body-md text-body-md text-on-surface-variant">Assurez-vous que votre décodeur gère
+                        les derniers codecs HEVC/H.265.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Call to Action Card -->
+          <!-- <div class="relative glass-panel rounded-3xl p-12 overflow-hidden neon-glow">
+            <div class="absolute -right-20 -top-20 w-64 h-64 bg-primary/20 rounded-full blur-[100px]"></div>
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+              <div class="max-w-md">
+                <h3 class="font-headline-lg text-headline-lg text-white mb-4">Prêt pour l'élite ?</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">Accédez dès maintenant à notre catalogue
+                  exclusif en 4K natif et Dolby Atmos.</p>
+              </div>
+              <button
+                class="bg-gradient-to-r from-primary to-primary-container text-on-primary-container px-10 py-5 rounded-full font-headline-md text-headline-md whitespace-nowrap hover:scale-105 transition-all">S'abonner
+                Maintenant</button>
+            </div>
+          </div>-->
+        </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+  <script>
+    async function loadComponent(id, url) {
+      const res = await fetch(url);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+    }
+    loadComponent("header", "../../pages/widget/header.html");
+    loadComponent("footer", "../../pages/widget/footer.html");
+  </script>
+
+  
+  <script src="../../assets/js/main.js"></script>
 </body>
+
 </html>

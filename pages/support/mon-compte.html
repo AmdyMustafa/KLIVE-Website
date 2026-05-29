@@ -1,254 +1,216 @@
 <!DOCTYPE html>
 <html lang="fr" class="dark">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maîtriser votre compte | Blog KayLive</title>
-    <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml"/>
-  <meta name="theme-color" content="#0A0A0B"/>
+  <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#0A0A0B" />
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet" />
   <!-- Tailwind CDN (design tokens via config) -->
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script src="../../assets/js/components.js"></script>
   <!-- Our CSS -->
-  <link rel="stylesheet" href="../../assets/css/tokens.css"/>
-  <link rel="stylesheet" href="../../assets/css/main.css"/>
-<style>
-.glass-card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(40px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .neon-glow {
-            box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
-        }
-        .neon-border {
-            border: 1px solid #A855F7;
-        }
-        .perforated-edge {
-            mask-image: radial-gradient(circle at 100% 50%, transparent 10px, black 11px);
-        }
-        body {
-            background-color: #0A0A0B;
-            color: #e5e2e3;
-        }
-</style>
+  <link rel="stylesheet" href="../../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../../assets/css/main.css" />
+  <style>
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(40px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .neon-glow {
+      box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+    }
+
+    .neon-border {
+      border: 1px solid #A855F7;
+    }
+
+    .perforated-edge {
+      mask-image: radial-gradient(circle at 100% 50%, transparent 10px, black 11px);
+    }
+
+    body {
+      background-color: #0A0A0B;
+      color: #e5e2e3;
+    }
+  </style>
 </head>
+
 <body>
-<header class="nav" id="mainNav">
-  <a href="../../index.html" class="nav-logo">KayLive</a>
-  <div class="nav-links">
-    <a href="../../index.html" class="">Accueil</a>
-    <a href="../../pages/privacy/collecte.html" class="">Privacy</a>
-    <a href="../../pages/support.html" class="">Support</a>
-    <a href="../../pages/blog/streaming.html" class=" active">Blog</a>
-  </div>
-  <div class="nav-cta">
-    <a href="#" class="btn btn-primary btn-pill">
-      <span class="material-symbols-outlined" style="font-size:18px;font-family:'Material Symbols Outlined';font-style:normal">open_in_new</span>
-      Ouvrir l'app
-    </a>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-<nav class="mobile-menu" id="mobileMenu">
-  <a href="../../index.html">Accueil</a>
-  <a href="../../pages/privacy/collecte.html">Privacy</a>
-  <a href="../../pages/support.html">Support</a>
-  <a href="../../pages/blog/streaming.html" class="active">Blog</a>
-  <a href="#" class="mobile-menu-cta">Ouvrir l'application</a>
-</nav>
-<!-- Top Navigation Bar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-[40px] border-b border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
-<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop h-20">
-<div class="font-headline-md text-headline-md font-bold tracking-tighter text-primary">CINESTREAM</div>
-<div class="hidden md:flex items-center gap-base">
-<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md px-4" href="#">Home</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md px-4" href="#">Privacy</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md px-4" href="#">Support</a>
-</div>
-<div class="flex items-center gap-4">
-<button class="bg-gradient-to-r from-primary-container to-primary text-on-primary-container font-label-md text-label-md px-6 py-2.5 rounded hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] transition-all flex items-center gap-2">
-<span class="material-symbols-outlined text-sm">rocket_launch</span>
-                    Ouvrir l'application
-                </button>
-</div>
-</div>
-</nav>
-<main class="pt-20">
-<!-- Hero Section -->
-<header class="relative w-full h-[60vh] flex items-center justify-center overflow-hidden">
-<div class="absolute inset-0 z-0">
-<img alt="Cinematic background" class="w-full h-full object-cover opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvcMQiFQMs6MknoOvhLO4eo6D40648YvpUTEjZ9q4Jqh_D6rvhUuZyxFuohRN2IeEfMY5FAJcRJoLPbW8VWT-RfYxPJYn3eUfHeWxTAwbH6T3vNBXMDVFzyXjxCAkFRO4J2Cit0omhAMYiEXHk7aI7z-kj6pXg8EvR7qc1YUfG4U_9s3Bhxns2J8GRV8KnRvwwv4gIThLr7rSjzJN55igYrYyXRNjDfXdp0PU2hOld0IlkrmdTpkh1oRUhOZiMpxE6qQBnNNF6j3PM"/>
-<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/80 to-background"></div>
-</div>
-<div class="relative z-10 text-center px-margin-mobile md:px-0 max-w-4xl">
-<div class="mb-6 inline-flex items-center justify-center w-20 h-20 rounded-full glass-card neon-glow">
-<span class="material-symbols-outlined text-primary text-4xl" data-weight="fill">account_circle</span>
-</div>
-<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-4 text-on-surface">Maîtriser votre compte <span class="text-primary">KayLive</span></h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Optimisez votre expérience de streaming d'élite. Apprenez à gérer votre profil, sécuriser vos accès et personnaliser vos préférences pour une immersion totale.</p>
-</div>
-</header>
-<!-- Main Content (Bento Grid Style) -->
-<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-section-gap-lg">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
-<!-- Profile Management Section -->
-<div class="lg:col-span-8 glass-card p-10 rounded-xl relative overflow-hidden group">
-<div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
-<span class="material-symbols-outlined text-[120px]" data-icon="manage_accounts">manage_accounts</span>
-</div>
-<div class="relative z-10">
-<div class="flex items-center gap-3 mb-6">
-<span class="material-symbols-outlined text-primary" data-icon="person_edit">person_edit</span>
-<h2 class="font-headline-md text-headline-md text-on-surface">Gestion du Profil</h2>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
-                            Votre identité sur KayLive est la clé d'un contenu exclusif. Accédez à l'onglet "Mon Compte" pour mettre à jour vos informations personnelles en temps réel. Que ce soit votre alias de visionnage, votre adresse de facturation ou vos préférences de notification, chaque détail est conçu pour refléter votre statut de membre Elite.
-                        </p>
-<div class="grid md:grid-cols-2 gap-6">
-<div class="p-6 rounded-lg bg-surface-container border border-white/5">
-<h3 class="font-label-md text-label-md text-primary mb-2">Avatar Personnalisé</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Téléchargez une image haute résolution pour vous démarquer dans le chat des événements en direct.</p>
-</div>
-<div class="p-6 rounded-lg bg-surface-container border border-white/5">
-<h3 class="font-label-md text-label-md text-primary mb-2">Synchronisation Multi-Appareils</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Gérez les terminaux connectés pour assurer une fluidité parfaite entre votre home cinéma et vos mobiles.</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Specialized PPV Ticket Component -->
-<div class="lg:col-span-4 glass-card p-8 rounded-xl perforated-edge neon-border flex flex-col justify-center items-center text-center relative overflow-hidden">
-<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary"></div>
-<span class="material-symbols-outlined text-primary text-5xl mb-4" data-icon="confirmation_number">confirmation_number</span>
-<h3 class="font-headline-md text-headline-md mb-2">VOTRE PASSE</h3>
-<p class="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em] mb-6">Accès Intégral</p>
-<div class="w-full h-[1px] bg-white/10 my-4"></div>
-<p class="font-body-md text-body-md text-on-surface-variant mb-8 italic">"L'accès n'est pas un privilège, c'est un standard chez KayLive."</p>
-<button class="w-full bg-surface-container-highest hover:bg-primary hover:text-on-primary transition-all duration-300 font-label-md text-label-md py-4 rounded uppercase tracking-wider">Voir les Marquees</button>
-</div>
-<!-- Security Settings (Full Width Bento) -->
-<div class="lg:col-span-12 grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<div class="md:col-span-2 glass-card p-10 rounded-xl">
-<div class="flex items-center gap-3 mb-6">
-<span class="material-symbols-outlined text-primary" data-icon="shield_lock">shield_lock</span>
-<h2 class="font-headline-md text-headline-md text-on-surface">Sécurité de Grade Financier</h2>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6">
-                            KayLive utilise des protocoles de chiffrement de pointe pour protéger vos transactions PPV et vos données personnelles. Activez l'authentification à deux facteurs (2FA) dans vos réglages pour une tranquillité d'esprit absolue lors de vos achats de billets pour les grands événements.
-                        </p>
-<ul class="space-y-4">
-<li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-primary mt-1" data-icon="check_circle">check_circle</span>
-<div>
-<span class="font-label-md text-label-md text-on-surface block">Chiffrement de bout en bout</span>
-<span class="font-body-md text-body-md text-on-surface-variant">Toutes vos informations de paiement sont traitées via des passerelles sécurisées.</span>
-</div>
-</li>
-<li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-primary mt-1" data-icon="check_circle">check_circle</span>
-<div>
-<span class="font-label-md text-label-md text-on-surface block">Journal d'activité</span>
-<span class="font-body-md text-body-md text-on-surface-variant">Consultez l'historique complet de vos connexions pour détecter toute activité suspecte.</span>
-</div>
-</li>
-</ul>
-</div>
-<div class="glass-card p-10 rounded-xl bg-gradient-to-br from-surface-container to-surface-container-low flex flex-col justify-between">
-<div>
-<div class="flex items-center gap-3 mb-6">
-<span class="material-symbols-outlined text-primary" data-icon="tune">tune</span>
-<h2 class="font-headline-md text-headline-md text-on-surface">Préférences</h2>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6">
-                                Configurez votre qualité de streaming par défaut (jusqu'à 8K) et vos sous-titres préférés.
-                            </p>
-</div>
-<div class="space-y-4">
-<div class="flex items-center justify-between p-4 rounded bg-white/5">
-<span class="font-label-md text-label-md">Mode Sombre Auto</span>
-<div class="w-10 h-5 bg-primary rounded-full relative">
-<div class="absolute right-1 top-1 w-3 h-3 bg-white rounded-full"></div>
-</div>
-</div>
-<div class="flex items-center justify-between p-4 rounded bg-white/5 opacity-50">
-<span class="font-label-md text-label-md">Lecture Automatique</span>
-<div class="w-10 h-5 bg-on-surface-variant rounded-full relative">
-<div class="absolute left-1 top-1 w-3 h-3 bg-white rounded-full"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Call to Action Section -->
-<div class="lg:col-span-12 mt-section-gap-sm relative overflow-hidden rounded-2xl glass-card p-12 text-center">
-<div class="relative z-10">
-<h2 class="font-headline-lg text-headline-lg mb-6">Prêt à dominer l'arène ?</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl mx-auto">Rejoignez l'élite aujourd'hui et bénéficiez d'un contrôle total sur vos diffusions et événements en direct.</p>
-<div class="flex flex-col md:flex-row gap-6 justify-center">
-<button class="bg-primary text-on-primary font-label-md text-label-md px-10 py-5 rounded-full hover:shadow-xl transition-all">S'inscrire Maintenant</button>
-<button class="border border-white/20 text-on-surface font-label-md text-label-md px-10 py-5 rounded-full hover:bg-white/5 transition-all">Contacter le support Elite</button>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Standardized 4-Column Footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand-name">KayLive</div>
-        <p class="footer-brand-desc">Redéfinir le streaming pour une nouvelle ère numérique. La qualité, l'exclusivité et la juste rémunération au cœur de notre ADN.</p>
-        <div class="footer-socials">
-          <a href="#" class="footer-social" aria-label="Site"><span class="material-symbols-outlined" style="font-family:'Material Symbols Outlined';font-style:normal">public</span></a>
-          <a href="#" class="footer-social" aria-label="Email"><span class="material-symbols-outlined" style="font-family:'Material Symbols Outlined';font-style:normal">mail</span></a>
-          <a href="#" class="footer-social" aria-label="Share"><span class="material-symbols-outlined" style="font-family:'Material Symbols Outlined';font-style:normal">share</span></a>
+  
+
+  <!-- TopBar-->
+  <div id="header"></div>
+
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <header class="relative w-full h-[60vh] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img alt="Cinematic background" class="w-full h-full object-cover opacity-40"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvcMQiFQMs6MknoOvhLO4eo6D40648YvpUTEjZ9q4Jqh_D6rvhUuZyxFuohRN2IeEfMY5FAJcRJoLPbW8VWT-RfYxPJYn3eUfHeWxTAwbH6T3vNBXMDVFzyXjxCAkFRO4J2Cit0omhAMYiEXHk7aI7z-kj6pXg8EvR7qc1YUfG4U_9s3Bhxns2J8GRV8KnRvwwv4gIThLr7rSjzJN55igYrYyXRNjDfXdp0PU2hOld0IlkrmdTpkh1oRUhOZiMpxE6qQBnNNF6j3PM" />
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/80 to-background"></div>
+      </div>
+      <div class="relative z-10 text-center px-margin-mobile md:px-0 max-w-4xl">
+        <div class="mb-6 inline-flex items-center justify-center w-20 h-20 rounded-full glass-card neon-glow">
+          <span class="material-symbols-outlined text-primary text-4xl" data-weight="fill">account_circle</span>
+        </div>
+        <h1
+          class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-4 text-on-surface">
+          Maîtriser votre compte <span class="text-primary">KayLive</span></h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Optimisez votre expérience de
+          streaming d'élite. Apprenez à gérer votre profil, sécuriser vos accès et personnaliser vos préférences pour
+          une immersion totale.</p>
+      </div>
+    </header>
+    <!-- Main Content (Bento Grid Style) -->
+    <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-section-gap-lg">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+        <!-- Profile Management Section -->
+        <div class="lg:col-span-8 glass-card p-10 rounded-xl relative overflow-hidden group">
+          <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+            <span class="material-symbols-outlined text-[120px]" data-icon="manage_accounts">manage_accounts</span>
+          </div>
+          <div class="relative z-10">
+            <div class="flex items-center gap-3 mb-6">
+              <span class="material-symbols-outlined text-primary" data-icon="person_edit">person_edit</span>
+              <h2 class="font-headline-md text-headline-md text-on-surface">Gestion du Profil</h2>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+              Votre identité sur KayLive est la clé d'un contenu exclusif. Accédez à l'onglet "Mon Compte" pour mettre à
+              jour vos informations personnelles en temps réel. Que ce soit votre alias de visionnage, votre adresse de
+              facturation ou vos préférences de notification, chaque détail est conçu pour refléter votre statut de
+              membre Elite.
+            </p>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="p-6 rounded-lg bg-surface-container border border-white/5">
+                <h3 class="font-label-md text-label-md text-primary mb-2">Avatar Personnalisé</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">Téléchargez une image haute résolution pour
+                  vous démarquer dans le chat des événements en direct.</p>
+              </div>
+              <div class="p-6 rounded-lg bg-surface-container border border-white/5">
+                <h3 class="font-label-md text-label-md text-primary mb-2">Synchronisation Multi-Appareils</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">Gérez les terminaux connectés pour assurer
+                  une fluidité parfaite entre votre home cinéma et vos mobiles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Specialized PPV Ticket Component -->
+        <div
+          class="lg:col-span-4 glass-card p-8 rounded-xl perforated-edge neon-border flex flex-col justify-center items-center text-center relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary"></div>
+          <span class="material-symbols-outlined text-primary text-5xl mb-4"
+            data-icon="confirmation_number">confirmation_number</span>
+          <h3 class="font-headline-md text-headline-md mb-2">VOTRE PASSE</h3>
+          <p class="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em] mb-6">Accès Intégral</p>
+          <div class="w-full h-[1px] bg-white/10 my-4"></div>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-8 italic">"L'accès n'est pas un privilège,
+            c'est un standard chez KayLive."</p>
+           <!-- <button
+            class="w-full bg-surface-container-highest hover:bg-primary hover:text-on-primary transition-all duration-300 font-label-md text-label-md py-4 rounded uppercase tracking-wider">Voir
+            les Marquees</button>-->
+        </div>
+        <!-- Security Settings (Full Width Bento) -->
+        <div class="lg:col-span-12 grid grid-cols-1 md:grid-cols-3 gap-gutter">
+          <div class="md:col-span-2 glass-card p-10 rounded-xl">
+            <div class="flex items-center gap-3 mb-6">
+              <span class="material-symbols-outlined text-primary" data-icon="shield_lock">shield_lock</span>
+              <h2 class="font-headline-md text-headline-md text-on-surface">Sécurité de Grade Financier</h2>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+              KayLive utilise des protocoles de chiffrement de pointe pour protéger vos transactions PPV et vos données
+              personnelles. Activez l'authentification à deux facteurs (2FA) dans vos réglages pour une tranquillité
+              d'esprit absolue lors de vos achats de billets pour les grands événements.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-4">
+                <span class="material-symbols-outlined text-primary mt-1" data-icon="check_circle">check_circle</span>
+                <div>
+                  <span class="font-label-md text-label-md text-on-surface block">Chiffrement de bout en bout</span>
+                  <span class="font-body-md text-body-md text-on-surface-variant">Toutes vos informations de paiement
+                    sont traitées via des passerelles sécurisées.</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <span class="material-symbols-outlined text-primary mt-1" data-icon="check_circle">check_circle</span>
+                <div>
+                  <span class="font-label-md text-label-md text-on-surface block">Journal d'activité</span>
+                  <span class="font-body-md text-body-md text-on-surface-variant">Consultez l'historique complet de vos
+                    connexions pour détecter toute activité suspecte.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="glass-card p-10 rounded-xl bg-gradient-to-br from-surface-container to-surface-container-low flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3 mb-6">
+                <span class="material-symbols-outlined text-primary" data-icon="tune">tune</span>
+                <h2 class="font-headline-md text-headline-md text-on-surface">Préférences</h2>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                Configurez votre qualité de streaming par défaut (jusqu'à 8K) et vos sous-titres préférés.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-center justify-between p-4 rounded bg-white/5">
+                <span class="font-label-md text-label-md">Mode Sombre Auto</span>
+                <div class="w-10 h-5 bg-primary rounded-full relative">
+                  <div class="absolute right-1 top-1 w-3 h-3 bg-white rounded-full"></div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between p-4 rounded bg-white/5 opacity-50">
+                <span class="font-label-md text-label-md">Lecture Automatique</span>
+                <div class="w-10 h-5 bg-on-surface-variant rounded-full relative">
+                  <div class="absolute left-1 top-1 w-3 h-3 bg-white rounded-full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Call to Action Section -->
+        <div class="lg:col-span-12 mt-section-gap-sm relative overflow-hidden rounded-2xl glass-card p-12 text-center">
+          <div class="relative z-10">
+            <h2 class="font-headline-lg text-headline-lg mb-6">Prêt à dominer l'arène ?</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl mx-auto">Rejoignez l'élite
+              aujourd'hui et bénéficiez d'un contrôle total sur vos diffusions et événements en direct.</p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+              <button
+                class="bg-primary text-on-primary font-label-md text-label-md px-10 py-5 rounded-full hover:shadow-xl transition-all">Ouvrir l'application</button>
+              <button
+                onclick="window.location.href='./support.html'" class="border border-white/20 text-on-surface font-label-md text-label-md px-10 py-5 rounded-full hover:bg-white/5 transition-all">Contacter
+                le support </button>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="footer-col">
-        <h6>Support</h6>
-        <ul>
-          <li><a href="../../pages/support.html">Centre d'aide</a></li>
-          <li><a href="#">Devenir Streamer</a></li>
-          <li><a href="#">Espace Presse</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h6>Légal</h6>
-        <ul>
-          <li><a href="../../pages/privacy/conditions.html">Conditions d'utilisation</a></li>
-          <li><a href="../../pages/privacy/collecte.html">Politique de confidentialité</a></li>
-          <li><a href="../../pages/legal/mentions.html">Mentions légales</a></li>
-          <li><a href="../../pages/privacy/collecte.html#cookies">Cookies</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h6>Newsletter</h6>
-        <p class="footer-newsletter-desc">Restez informé des prochains lives exclusifs.</p>
-        <form class="footer-form" data-form="newsletter" onsubmit="return false;">
-          <input type="email" placeholder="votre@email.com" required/>
-          <button type="submit" aria-label="S'abonner">
-            <span class="material-symbols-outlined" style="font-family:'Material Symbols Outlined';font-style:normal">send</span>
-          </button>
-        </form>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copy">© 2025 KayLive. Tous droits réservés.</p>
-      <div class="footer-payments">
-        <span>WAVE</span><span>ORANGE MONEY</span><span>PAYPAL</span><span>STRIPE</span>
-      </div>
-    </div>
-  </div>
-</footer>
-<script src="../../assets/js/main.js"></script>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+  <script>
+    async function loadComponent(id, url) {
+      const res = await fetch(url);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+    }
+    loadComponent("header", "../../pages/widget/header.html");
+    loadComponent("footer", "../../pages/widget/footer.html");
+  </script>
+
+
+  <script src="../../assets/js/main.js"></script>
 </body>
+
 </html>

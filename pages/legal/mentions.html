@@ -14,24 +14,10 @@
 </head>
 <body>
 
-<header class="nav" id="mainNav">
-  <a href="../../index.html" class="nav-logo">KayLive</a>
-  <div class="nav-links">
-    <a href="../../index.html">Accueil</a>
-    <a href="../privacy/collecte.html">Privacy</a>
-    <a href="../support.html">Support</a>
-    <a href="../blog/streaming.html">Blog</a>
-  </div>
-  <div class="nav-cta">
-    <a href="#" class="btn btn-primary btn-pill">Ouvrir l'app</a>
-    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
-  </div>
-</header>
-<nav class="mobile-menu" id="mobileMenu">
-  <a href="../../index.html">Accueil</a>
-  <a href="../privacy/collecte.html">Privacy</a>
-  <a href="../support.html">Support</a>
-</nav>
+
+
+<!-- TopBar-->
+<div id="header"></div>
 
 <div class="nav-spacer"></div>
 <div class="container" style="padding-top:48px;padding-bottom:120px;max-width:800px;">
@@ -96,36 +82,21 @@
 
 </div>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand-name">KayLive</div>
-        <p class="footer-brand-desc">Redéfinir le streaming pour une nouvelle ère numérique.</p>
-      </div>
-      <div class="footer-col">
-        <h6>Support</h6>
-        <ul><li><a href="../support.html">Centre d'aide</a></li></ul>
-      </div>
-      <div class="footer-col">
-        <h6>Légal</h6>
-        <ul>
-          <li><a href="../privacy/conditions.html">Conditions</a></li>
-          <li><a href="../privacy/collecte.html">Confidentialité</a></li>
-          <li><a href="mentions.html">Mentions légales</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h6>Contact</h6>
-        <p class="footer-newsletter-desc"><a href="mailto:contact@kaylive.com" style="color:var(--primary);">contact@kaylive.com</a></p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copy">© 2025 KayLive. Tous droits réservés.</p>
-      <div class="footer-payments"><span>WAVE</span><span>ORANGE MONEY</span><span>PAYPAL</span><span>STRIPE</span></div>
-    </div>
-  </div>
-</footer>
+
+
+  <!-- Footer -->
+  <div id="footer"></div>
+  <script>
+    async function loadComponent(id, url) {
+      const res = await fetch(url);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+    }
+    loadComponent("header", "../../pages/widget/header.html");
+    loadComponent("footer", "../../pages/widget/footer.html");
+  </script>
+
+  
 <script src="../../assets/js/main.js"></script>
 </body>
 </html>
